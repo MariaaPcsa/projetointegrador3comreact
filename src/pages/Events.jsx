@@ -10,7 +10,7 @@ const Events = () => {
 
     </p>
         
-        Events</div>
+        </div>
   )
 }
 

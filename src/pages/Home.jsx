@@ -7,7 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Home = () => {
   return (
     <>
-     
+     <body>
+      
+    
       <main className='container'>
         <h2 id="titulo">Novo Tempo - A Igreja da Família</h2>
         
@@ -34,6 +36,7 @@ const Home = () => {
           </a>
         </center>
       </main>
+      </body>
     </>
   );
 }
