@@ -34,7 +34,7 @@ function App() {
 <Header/>
 
  <Routes>
-    <Route path="/home" element={<Home/>} />
+    <Route path="/" element={<Home/>} />
 <Route path="/events" element={<Events/>} />
    <Route path="/generosity" element={<Generosity/>} /> 
    <Route path="/location" element={<Location/>}/> 
