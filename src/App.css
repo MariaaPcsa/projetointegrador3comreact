@@ -1,75 +1,84 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+/* Reset CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+.container{
+  margin: 0;
+  padding: 0;
+}
+/* Corpo da página */
 body {
-    
-  font-family: "Greze", serif,Arial,sans-serif;
+  overflow-x: hidden;
+}
+
+/* Corpo da página */
+body {
+ font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
-  
+  margin: 0; /* Remover qualquer margem do body */
+  padding: 0; /* Remover qualquer preenchimento do body */
+  width: 100%; /* Garantir que ocupe toda a largura da tela */
 }
 
-/* Estilo geral do Header */
 .header {
   display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 25px;
+  padding: 20px; /* Remover qualquer preenchimento */
   background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-}
-.ancara{
-  margin: 5px;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 4px;
-  
-
+  width: 100%; /* Garantir que ocupe toda a largura da tela */
+  margin: 0 auto; /* Remove qualquer margem */
+  border-radius: 8px; /* Remove arredondamento */
+  overflow: hidden; /* Evita rolagem devido a elementos internos */
+  width: 100vw; /* Faz com que ocupe toda a largura da viewport */
+  max-width: 100%; /* Garante que não ultrapasse a largura total */
+ 
 }
 
+
+
+/* Estilização do título */
 .titulo {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/* Logo */
 .logomarca {
-  width: 60px; /* Logo menor */
+  width: 60px;
   height: auto;
-  margin-right: 10px; /* Espaço entre logo e o texto */
+  margin-right: 10px;
   border-radius: 45px;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
-
+/* Menu de navegação */
 .nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-}
-
-.nav li {
-  margin-right: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin: 0; /* Remove qualquer margem */
 }
 
 .nav a {
   text-decoration: none;
-  color:white;
+  color: white;
   font-size: 1rem;
   font-weight: 500;
-
 }
 
 .nav a:hover {
@@ -86,6 +95,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  transition: 0.3s;
 }
 
 .Ouvir button:hover {
@@ -94,7 +104,7 @@ body {
 
 /* Acessibilidade e select */
 .acessibilidade {
-  margin-left: 20px;
+  padding-left: 0;
 }
 
 .acessibilidade select {
@@ -105,46 +115,43 @@ body {
 }
 
 /* Responsividade */
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo {
+    font-size: 1.4rem;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 15px 0;
   }
 
   .titulo {
     font-size: 1.25rem;
-    margin-bottom: 10px;
-  }
-
-  .nav {
-    width: 100%;
-    margin-top: 15px;
   }
 
   .nav ul {
-    display: block;
-    text-align: left;
-  }
-
-  .nav li {
-    margin: 5px 0;
-  }
-
-  .Ouvir {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .acessibilidade {
-    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media (max-width: 480px) {
   .logomarca {
-    width: 50px; /* Reduzindo ainda mais o logo */
+    width: 50px;
   }
 
   .titulo {
@@ -158,4 +165,53 @@ body {
   .Ouvir button {
     font-size: 0.9rem;
   }
+}
+
+/* MAIN */
+h2 {
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.5rem;
+  font: bolder;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin: 0; /* Remove margens padrão */}
+  #video {
+    display: block;
+    margin: 0 auto; /* Centraliza o iframe horizontalmente */
+    width: 100%; /* Ajusta o vídeo para 80% da largura da página (pode aumentar para 100%) */
+    height: 600px; /* Define a altura fixa para o vídeo */
+    max-width: 100%; /* Impede que o vídeo ultrapasse a largura da página */
+}
+
+.welcome {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.welcome h2 {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+p{
+  font-family:  'Arial Narrow Bold', sans-serif;
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.8; 
+}
+h3{
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  font: bolder;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin: 10px;
+
 }
