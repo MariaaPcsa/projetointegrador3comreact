@@ -58,7 +58,7 @@ const Header = () => {
         welcomeSection.style.color = "";
       }
       document.querySelectorAll("body, body *").forEach(el => {
-        el.style.fontSize = "10rem"; // Volta ao tamanho padrão
+        el.style.fontSize = "2rem"; // Volta ao tamanho padrão
       });
     }
   };
