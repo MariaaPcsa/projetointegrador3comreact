@@ -1,9 +1,14 @@
 import React from 'react';
 import '../index.css';
 import '../App.css';
+
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from '../components/Header';
+
 import Footer from '../components/Footer';
+import Header from '../components/Header';
+
+
 
 
 const Home = () => {
@@ -13,10 +18,11 @@ const Home = () => {
      <body>
       <Header/>
       
-    
-
+      
+   
+   
       <main className='container'>
-         
+      
       <br /><br />
         <h2 id="titulo">Novo Tempo - A Igreja da Família</h2>
         

@@ -84,8 +84,8 @@ const Header = () => {
     <div className="container">
       <div className="header">
         <h1 className="titulo">
-          <img className="logomarca" src="/images/logo.jpg" alt="Logo Igreja Novo Tempo" />
-          Novo Tempo 
+          <img className="logomarca" src="../images/logo.jpg" alt="Logo Igreja Novo Tempo" />
+          Novo Tempo - A Igreja da Família
         </h1>
 
         <nav className="nav">

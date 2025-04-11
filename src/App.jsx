@@ -5,10 +5,7 @@ import './index.css';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
 import Header from "./components/Header";
-
 
 import Home from "./pages/Home";
 import Location from "./pages/Location";
@@ -19,6 +16,7 @@ import Ctn from "./pages/Ctn";
 import Ebnt from "./pages/Ebnt";
 import WhoWeAre from "./pages/WhoWeAre";
 import Footer from "./components/Footer";
+
 
 
 
@@ -35,7 +33,8 @@ function App() {
 <Header/>
 
  <Routes>
-    <Route path="/" element={<Home/>} />
+ 
+    <Route path="/home" element={<Home/>} />
 <Route path="/events" element={<Events/>} />
    <Route path="/generosity" element={<Generosity/>} /> 
    <Route path="/location" element={<Location/>}/> 
@@ -47,7 +46,7 @@ function App() {
    
    
  </Routes>
-<Footer/>
+<Footer/> 
 </BrowserRouter>
 
     </>

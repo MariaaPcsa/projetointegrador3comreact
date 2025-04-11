@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Footer = () => {
   return (
     <>
-    
+   
     <div className='footer'>
         <section>
 
@@ -68,6 +68,7 @@ const Footer = () => {
           
           <p>&copy; 2025 Igreja Cristã Novo Tempo - Todos os direitos reservados.</p>
     </div>
+   
      </>
   )
 }

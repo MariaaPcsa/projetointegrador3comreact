@@ -2,7 +2,8 @@ import React from 'react'
 
 const WhoWeAre = () => {
   return (
-    <div>
+    <div> 
+
       <p>
 
       Qem Somos 

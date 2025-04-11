@@ -36,7 +36,7 @@ body {
 .header {
   display: flex;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 3.2rem 2rem; /* Preenchimento */
+  padding: 3.2  rem 2rem; /* Preenchimento */
   background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
   width: 100%; /* Ocupa toda a largura */
   margin: 0; /* Remove margens laterais */
@@ -52,7 +52,7 @@ body {
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
-   color: white; 
+   color: black; 
 }
 
 /* Logo */
@@ -291,8 +291,8 @@ justify-content: center;
 
 /* Estilo das imagens */
 .midia-link-lista img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 
@@ -300,7 +300,7 @@ justify-content: center;
 .footer addres,
 .footer p {
   margin: 0.5rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Responsividade: Ajustes para telas até 768px */
@@ -322,8 +322,8 @@ justify-content: center;
 /* Responsividade: Ajustes para telas menores que 480px */
 @media (max-width: 480px) {
   .midia-link-lista img {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -339,6 +339,7 @@ justify-content: center;
 
   .titulo {
     font-size: 1.4rem;
+    color: white  ;
   }
 
   .nav ul {
