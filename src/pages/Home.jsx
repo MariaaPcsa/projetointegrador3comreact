@@ -3,11 +3,13 @@ import '../index.css';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
   return (
     <>
+    
      <body>
       <Header/>
       
@@ -35,16 +37,43 @@ const Home = () => {
             allowFullScreen
           />
 
-          
+          <br />
+<section>
+<div className='on'>
+ 
+ <h3>
+  Convidamos Você para ser junta a Nós para louvar a Deus estaremos ao vivo, confira a datas abaixo!
+ </h3>
+ <h3> ⛪Cultos Oficiais</h3>
+ <p>Quarta-feira - 20:00h</p>
+ <p>Culto Posicionados para Prosperar</p>
+ <p>Domingo - 9:00h e 18:00h</p>
+ <p>Culto da Família</p>
+
+ <a href="https://www.youtube.com/@MinisterioNovotempo"
+ 
+ > <button className='button-link-youtube'> Acesse o nosso canal no Youtube</button>
+ 
+ </a>
+</div>
+</section>
+
+
         </section>
+
+      
+
         <h4 className="subTitulo2">A NOSSA IGREJA QUER TE CONHECER MELHOR! </h4>
    <div className="pesquisa">
     
     <p> 
     Estamos felizes por você estar conosco! Queremos saber mais sobre você para oferecer a melhor acolhida possível e ajudá-lo a se sentir parte de nossa família. Por favor, responda às perguntas </p>
 
+    <p>Acessar o formulário abaixo!</p>
    <a href="https://docs.google.com/forms/d/e/1FAIpQLScBrZ-7H9EToYZFedkFJhxYEkckoNlz3kjOe1HWFSV_96fHuw/viewform" target="_blank" rel="noopener noreferrer">
-            Clique aqui para acessar o formulário
+  
+   <button className='button-link'> Clique aqui para acessar o formulário</button>
+            
           </a>
           <br /><br />
    </div>
@@ -52,7 +81,9 @@ const Home = () => {
        
 
       </main>
+      <Footer/>
       </body>
+     
     </>
   );
 }

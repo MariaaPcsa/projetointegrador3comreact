@@ -1,46 +1,47 @@
 
 /* Reset CSS */
 
-* {
-  box-sizing: border-box;
+*{
   margin: 0;
   padding: 0;
+ box-sizing: border-box;
+
+}
+html{
+  font-style: 62.5%;
+  /* corresponde a 10px */
 }
 
-.container{
+html, body {
   margin: 0;
   padding: 0;
+  
+}
+
+.header {
+  /* Outras propriedades... */
+  margin-left: 0;
+  padding-left: 0;
 }
 /* Corpo da página */
 body {
-  overflow-x: hidden;
-}
-
-/* Corpo da página */
-body {
+  font-size: 10px;
  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.6;
   background-color: #e7e2e2dc;
   color: #333;
-  margin: 0; /* Remover qualquer margem do body */
-  padding: 0; /* Remover qualquer preenchimento do body */
   width: 100%; /* Garantir que ocupe toda a largura da tela */
 }
 
 .header {
   display: flex;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px; /* Remover qualquer preenchimento */
+  padding: 3.2rem 2rem; /* Preenchimento */
   background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-  width: 100%; /* Garantir que ocupe toda a largura da tela */
-  margin: 0 auto; /* Remove qualquer margem */
-  border-radius: 8px; /* Remove arredondamento */
-  overflow: hidden; /* Evita rolagem devido a elementos internos */
-  width: 100vw; /* Faz com que ocupe toda a largura da viewport */
-  max-width: 100%; /* Garante que não ultrapasse a largura total */
- 
+  width: 100%; /* Ocupa toda a largura */
+  margin: 0; /* Remove margens laterais */
+  border-radius: 8px;
+  
 }
 
 
@@ -52,9 +53,6 @@ body {
   font-size: 2rem;
   font-weight: bold;
    color: white; 
-  /* background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  */
 }
 
 /* Logo */
@@ -71,7 +69,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  padding: 0;
+  padding: 20px;
   margin: 0; /* Remove qualquer margem */
 }
 
@@ -81,12 +79,15 @@ body {
   font-size: 1rem;
   font-weight: 500;
   text-decoration: underline;
+  padding: 0;
+  
 }
 
-.nav a:hover {
+.nav a:hover  {
   text-decoration: underline;
   color: #ffcc00;
 }
+
 
 /* Estilo do botão de ouvir */
 .Ouvir button {
@@ -98,7 +99,7 @@ body {
   cursor: pointer;
   border-radius: 4px;
   transition: 0.3s;
-  padding: 5px; 
+   
 }
 
 .Ouvir button:hover {
@@ -150,6 +151,7 @@ h2 {
      color: black;
      margin-bottom: 30px;
      border-width: 20px;
+     
  }
  
  .welcome p {
@@ -159,10 +161,8 @@ h2 {
  }
  p{
   font-family: "Montserrat", sans-serif;
-   font-size: 1.1rem;
-   color: black;
-   line-height: 1.2; 
- }
+}  
+ 
  h3{
    font-family: 'Arial Narrow Bold', sans-serif;
    font-size: 1.3rem;
@@ -185,16 +185,150 @@ h2 {
 
 .pesquisa{
  
+
   text-align: center; /* Centraliza o texto horizontalmente */
   background-color: #f6e4f14b;
-  border-top: 2px solid  #ff00e150;
-  border-bottom: 2px solid #ff00e150;
   margin:20px 10px;
   border-radius: 10px;
   padding: 20px; 
+  border-top: 2px solid  #ff00e150;
+  border-bottom: 2px solid #ff00e150;
 }
 
 
+
+.button-link{
+  display: inline-block;
+  text-align: center; /* Centraliza o texto interno, se necessário */
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+  color: white;
+font: 500;
+justify-content: center;
+}
+
+.button-link-youtube{
+  display: block;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+
+
+
+
+
+
+.on p {
+ margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top: 1px solid  #ff00e150;
+  border-bottom: 1px solid #ff00e150;
+
+}
+/* ********************************************** */
+/* Estilos gerais do Footer */
+.footer {
+  background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Seção das redes sociais */
+.footer section {
+  margin-bottom: 1.5rem;
+}
+
+/* Container das imagens */
+.imag-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;          /* Permite quebra de linha se necessário */
+  justify-content: center;  /* Centraliza os itens horizontalmente */
+  align-items: center;
+  gap: 1rem;                /* Espaço entre os itens */
+}
+
+/* Estilo para cada link de mídia */
+.midia-link-lista {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hover para os links */
+.midia-link-lista:hover {
+  background: #eaeaea;
+}
+
+/* Estilo das imagens */
+.midia-link-lista img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Estilizando o endereço e demais parágrafos */
+.footer addres,
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsividade: Ajustes para telas até 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .midia-link-lista {
+    padding: 0.4rem;
+  }
+  
+  .midia-link-lista img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Responsividade: Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+  .midia-link-lista img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/* **************************** */
 /* Responsividade */
 @media (max-width: 1024px) {
   .header {

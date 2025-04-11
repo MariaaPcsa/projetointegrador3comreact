@@ -18,6 +18,7 @@ import Generosity from "./pages/Generosity";
 import Ctn from "./pages/Ctn";
 import Ebnt from "./pages/Ebnt";
 import WhoWeAre from "./pages/WhoWeAre";
+import Footer from "./components/Footer";
 
 
 
@@ -46,7 +47,7 @@ function App() {
    
    
  </Routes>
-
+<Footer/>
 </BrowserRouter>
 
     </>

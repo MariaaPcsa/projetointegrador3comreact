@@ -31,8 +31,8 @@ const Header = () => {
     setSelectedOption(event.target.value);
     const tamanhosDeFonte = {
       "fonte-pequena": "0.8rem",
-      "fonte-media": "1rem",
-      "fonte-grande": "1.8rem"
+      "fonte-media": "1.6rem",
+      "fonte-grande": "2rem"
     };
 
     const body = document.body;
