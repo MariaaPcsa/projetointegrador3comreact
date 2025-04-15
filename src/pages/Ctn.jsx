@@ -1,22 +1,28 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
 import '../index.css';
-import '../App.css';
+import '../App.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const Ctn = () => {
   return (
-    <>
-   <Header/>
-    <body>
+   <>
+   
+   <body>
+    <Header/>
+    <main>
+<h2>CTN</h2>
+
+    </main>
+    <Footer/>
+   </body>
+   
+   </>
+   
 
    
-    <div><p> Ctn</p></div>
-
-    </body>
-
-    </>
   )
 }
 

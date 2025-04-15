@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
+import {Link } from "react-router-dom";
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+
+
 
 const Header = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -90,14 +93,23 @@ const Header = () => {
 
         <nav className="nav">
           <ul>
-            <li><a href="/home">Home</a></li>
+          <Link to = {'/'}>Home</Link>
+          <Link to = {'/quemsomos'}>Quem Somos</Link>
+          <Link to = {'/cnt'}>CNT</Link>
+          <Link to = {'/ebnt'}>EBNT</Link>
+          <Link to = {'/sos'}>SOS</Link>
+          <Link to = {'/events'}>Eventos</Link>
+          <Link to = {'/generosity'}>Generosidade</Link>
+          <Link to = {'/location'}>Localização</Link>
+           
+           {/* <li><a href="/home">Home</a></li>
             <li><a href="/quemsomos">Quem Somos</a></li>
             <li><a href="/cnt">CNT</a></li>
             <li><a href="/ebnt">EBNT</a></li>
             <li><a href="/sos">SOS</a></li>
             <li><a href="/events">Eventos</a></li>
             <li><a href="/generosity">Generosidade</a></li>
-            <li><a href="/location">Localização</a></li>
+            <li><a href="/location">Localização</a></li> */}
           </ul>
         </nav>
 
