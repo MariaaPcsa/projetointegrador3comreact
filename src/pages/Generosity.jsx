@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const Generosity = () => {
   return (
-    <p>Generosity</p>
+    <h2>Generozidade</h2>
   )
 }
 

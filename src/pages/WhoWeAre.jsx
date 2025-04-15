@@ -14,7 +14,9 @@ const WhoWeAre = () => {
    <body>
    <Header/>
      <main>
-  <p>Quen somos</p>
+      
+      <h2>Quen somo</h2>
+  
      </main>
 
 

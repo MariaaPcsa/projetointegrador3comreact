@@ -1,6 +1,6 @@
 import React from 'react'
 import '../index.css';
-import '../App.css'
+import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -8,21 +8,14 @@ import Footer from '../components/Footer';
 
 const Ctn = () => {
   return (
-   <>
-   
-   <body>
-    <Header/>
-    <main>
-<h2>CTN</h2>
-
-    </main>
+    <>
+    <body>
+      <Header/>
+    <div><h2>Ebnt</h2></div>
     <Footer/>
-   </body>
-   
-   </>
-   
-
-   
+    </body>
+    
+  </>
   )
 }
 

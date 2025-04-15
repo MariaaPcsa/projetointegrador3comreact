@@ -93,14 +93,37 @@ const Header = () => {
 
         <nav className="nav">
           <ul>
-          <Link to = {'/'}>Home</Link>
-          <Link to = {'/quemsomos'}>Quem Somos</Link>
-          <Link to = {'/cnt'}>CNT</Link>
+            <li>
+            <Link to = {'/'}>Home</Link>
+            </li>
+          
+          <li>
+          <Link to = {'/whoweare'}>Quem Somos</Link> 
+              </li>
+         
+          <li>
+          <Link to = {'/ctn'}>CNT</Link>
+              </li>
+          
+          <li>
           <Link to = {'/ebnt'}>EBNT</Link>
-          <Link to = {'/sos'}>SOS</Link>
+              </li>
+         
+          <li>
+          <Link to = {'/sos'}>Sos</Link> 
+              </li>
+       
+          <li>
           <Link to = {'/events'}>Eventos</Link>
+              </li>
+          
+          <li>
           <Link to = {'/generosity'}>Generosidade</Link>
+              </li>
+          <li>
           <Link to = {'/location'}>Localização</Link>
+              </li>
+         
            
            {/* <li><a href="/home">Home</a></li>
             <li><a href="/quemsomos">Quem Somos</a></li>

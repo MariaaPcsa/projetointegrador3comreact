@@ -6,8 +6,18 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const Ebnt = () => {
+ 
   return (
-    <div>Ebnt</div>
+    <>
+    <body>
+      <Header/>
+    <div><h2>Ebnt</h2></div>
+    <Footer/>
+    </body>
+    
+  </>
+  
+
   )
 }
 

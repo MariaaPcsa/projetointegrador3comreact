@@ -10,10 +10,12 @@ const Sos = () => {
     <>
    
     <body>
+      <Header/>
 
-    <div><p>Sos 
-    </p></div>
-    
+    <div>
+      <h2>SOS</h2>
+    </div>
+    <Footer/>
     </body>
     
     </>
