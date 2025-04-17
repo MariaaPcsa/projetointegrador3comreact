@@ -90,7 +90,7 @@ const Header = () => {
     <div className="container">
       <div className="header">
         <h1 className="titulo">
-          <img className="logomarca" src="../images/logo.jpg" alt="Logo Igreja Novo Tempo" />
+          <img className="logomarca" src="/images/logo.jpg" alt="Logo Igreja Novo Tempo" />
           Novo Tempo - A Igreja da Família
         </h1>
 
@@ -101,30 +101,30 @@ const Header = () => {
             </li>
           
           <li>
-          <Link to = {'/whoweare'}>Quem Somos</Link> 
+          <Link to = {'./whoweare'}>Quem Somos</Link> 
               </li>
          
           <li>
-          <Link to = {'/ctn'}>CNT</Link>
+          <Link to = {'./ctn'}>CNT</Link>
               </li>
           
           <li>
-          <Link to = {'/ebnt'}>EBNT</Link>
+          <Link to = {'./ebnt'}>EBNT</Link>
               </li>
          
           <li>
-          <Link to = {'/sos'}>Sos</Link> 
+          <Link to = {'./sos'}>Sos</Link> 
               </li>
        
           <li>
-          <Link to = {'/events'}>Eventos</Link>
+          <Link to = {'./events'}>Eventos</Link>
               </li>
           
           <li>
-          <Link to = {'/generosity'}>Generosidade</Link>
+          <Link to = {'./generosity'}>Generosidade</Link>
               </li>
           <li>
-          <Link to = {'/location'}>Localização</Link>
+          <Link to = {'./location'}>Localização</Link>
               </li>
          
            
