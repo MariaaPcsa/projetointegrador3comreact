@@ -30,7 +30,10 @@ function App() {
       
     
       <BrowserRouter>
-<Header/>
+      <Header>
+        
+      </Header>
+
 
  <Routes>
  

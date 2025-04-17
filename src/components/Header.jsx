@@ -84,6 +84,9 @@ const Header = () => {
   }, []);
 
   return (
+    <body>
+      <main>
+
     <div className="container">
       <div className="header">
         <h1 className="titulo">
@@ -152,6 +155,8 @@ const Header = () => {
         </div>
       </div>
     </div>
+    </main>
+    </body>
   );
 }
 
