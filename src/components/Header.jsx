@@ -136,7 +136,7 @@ const Header = () => {
   return (
     <div>
       <main>
-        <div className="container">
+        <div className="">
           <div className="header">
             <h1 className="titulo">
               <img className="logomarca" src="/images/logo.jpg" alt="Logo Igreja Novo Tempo" />
@@ -159,7 +159,7 @@ const Header = () => {
             <div className="Ouvir">
               <button onClick={leitorDeTexto}>🔊 Ouvir Página</button>
               <button onClick={pararLeitura}>🛑 Parar</button>
-              <div className="acessibilidade container">
+              <div className="acessibilidade">
                 <label htmlFor="selecione"></label>
                 <select
                   name="GrupoSelect"
