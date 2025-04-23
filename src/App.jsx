@@ -29,7 +29,7 @@ function App() {
     <>
 
    
-      <body>
+      
      
     
     
@@ -53,7 +53,7 @@ function App() {
  </Routes>
 <Footer/> 
 </BrowserRouter>
-</body>
+
     </>
 
 
