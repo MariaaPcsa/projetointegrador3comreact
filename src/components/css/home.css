@@ -1,0 +1,169 @@
+
+
+
+
+  /* Responsivo para h2 */
+  h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: 1.5rem; /* Corrigido de 0.2rem para legibilidade */
+    text-align: center;
+    margin: 30px;
+  }
+  h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.3rem; /* Corrigido de 0.2rem para legibilidade */
+    text-align: center;
+    margin: 30px;
+  }
+  
+  /* Vídeo centralizado e responsivo */
+  #video {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Responsivo */
+    border-radius: 10px;
+  }
+  
+  /* Responsividade para container de boas-vindas */
+  .welcome {
+    background-color: #f6e4f14b;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-top: 2px solid #ff00e150;
+    border-bottom: 2px solid #ff00e150;
+  }
+  
+  /* Títulos e textos */
+  .welcome h3,
+  h3,
+  .subTitulo,
+  .subTitulo2,
+  .button-link,
+  .button-link-youtube,
+  .on p,
+  .welcome p,
+  .pesquisa {
+    text-align: center;
+  }
+  
+  /* Fontes e tamanhos */
+  .welcome h3,
+  h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+   color: black;
+    font-weight: 600;
+  }
+  
+  .welcome p,
+  .on p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+  }
+  
+  .subTitulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .subTitulo2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .pesquisa {
+    background-color: #f6e4f14b;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    
+    border-bottom: 2px solid #ff00e150;
+  }
+  
+  /* Botões */
+  .button-link,
+  .button-link-youtube {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  /* Responsividade: Tablets */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .welcome h3,
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    .welcome p,
+    .on p {
+      font-size: 1rem;
+    }
+  
+    .subTitulo {
+      font-size: 1.1rem;
+    }
+  
+    #video {
+      width: 95%;
+    }
+  }
+  
+  /* Responsividade: Celulares pequenos */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1rem;
+    }
+  
+    .welcome h3,
+    h3 {
+      font-size: 1.3rem;
+    }
+  
+    .welcome p,
+    .on p {
+      font-size: 1.2rem;
+    }
+  
+    .subTitulo {
+      font-size: 1.4rem;
+    }
+  
+    .subTitulo2 {
+      font-size: 1.2rem;
+    }
+  
+    .button-link,
+    .button-link-youtube {
+      font-size: 1rem;
+      padding: 0.4rem;
+    }
+  
+    #video {
+      width: 100%;
+    }
+  }
+  

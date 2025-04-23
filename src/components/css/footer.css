@@ -1,0 +1,143 @@
+.footer {
+    background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    line-height: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+  }
+  
+  /* Seção das redes sociais */
+  .footer section {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Container das imagens */
+  .imag-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;          /* Permite quebra de linha se necessário */
+    justify-content: center;  /* Centraliza os itens horizontalmente */
+    align-items: center;
+    gap: 1rem;                /* Espaço entre os itens */
+  }
+  
+  /* Estilo para cada link de mídia */
+  .midia-link-lista {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Hover para os links */
+  .midia-link-lista:hover {
+    background: #eaeaea;
+  }
+  
+  /* Estilo das imagens */
+  .midia-link-lista img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  /* Estilizando o endereço e demais parágrafos */
+  .footer addres,
+  .footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  /* Responsividade: Ajustes para telas até 768px */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1.5rem 1rem;
+      line-height: 1rem;
+    }
+    
+    .midia-link-lista {
+      padding: 0.4rem;
+    }
+    
+    .midia-link-lista img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  /* Responsividade: Ajustes para telas menores que 480px */
+  @media (max-width: 480px) {
+    .midia-link-lista img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  
+  
+ 
+  /* Responsividade */
+  @media (max-width: 1024px) {
+    .header {
+      padding: 20px 0;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .titulo {
+      font-size: 1.4rem;
+      color: white  ;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0;
+      line-height: 1rem;
+    }
+  
+    .titulo {
+      font-size: 1.25rem;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logomarca {
+      width: 50px;
+    }
+  
+    .titulo {
+      font-size: 1rem;
+    }
+  
+    .nav a {
+      font-size: 0.9rem;
+      
+    }
+  
+    .Ouvir button {
+      font-size: 0.9rem;
+    }
+  }
+  

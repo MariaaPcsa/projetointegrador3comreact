@@ -1,14 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react';
-import {Link } from "react-router-dom";
-import '../App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-
-
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+// import '../App.css';
+import '../components/css/header.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
-  const [selectedOption, setSelectedOption] = useState("");
   const [isPaused, setIsPaused] = useState(false);
-  const speech = useRef(null);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  let speech = null;
 
   const leitorDeTexto = () => {
     if (speechSynthesis.speaking && !isPaused) {
@@ -18,146 +18,171 @@ const Header = () => {
       speechSynthesis.resume();
       setIsPaused(false);
     } else {
+      speechSynthesis.cancel();
       const text = document.body.innerText;
-      speech.current = new SpeechSynthesisUtterance(text);
-      speech.current.lang = "pt-BR";
-
-      speech.current.onend = () => {
-        setIsPaused(false);
-      };
-
-      speechSynthesis.speak(speech.current);
+      speech = new SpeechSynthesisUtterance(text);
+      speech.lang = 'pt-BR';
+      speech.onend = () => setIsPaused(false);
+      speechSynthesis.speak(speech);
     }
   };
 
-  const handleChange = (event) => {
-    setSelectedOption(event.target.value);
-    const tamanhosDeFonte = {
-      "fonte-pequena": "0.8rem",
-      "fonte-media": "1.6rem",
-      "fonte-grande": "2rem"
-    };
+  const pararLeitura = () => {
+    speechSynthesis.cancel();
+    setIsPaused(false);
+  };
 
+  const verificarFimDaPagina = () => {
+    if (
+      window.innerHeight + window.scrollY >= document.body.offsetHeight &&
+      speechSynthesis.speaking
+    ) {
+      speechSynthesis.pause();
+      setIsPaused(true);
+    }
+  };
+
+  const alterarCorDaPagina = () => {
     const body = document.body;
-    const footer = document.getElementById("pageFooter");
-    const welcomeSection = document.querySelector(".welcome");
+    const footer = document.getElementById('pageFooter');
 
-    if (event.target.value === "cor") {
-      body.style.backgroundColor = "black";
-      if (footer) footer.style.backgroundColor = "#444";
-      if (welcomeSection) {
-        welcomeSection.style.backgroundColor = "#222";
-        welcomeSection.style.color = "#fff";
-      }
-    } else if (event.target.value in tamanhosDeFonte) {
-      document.querySelectorAll("body, body *").forEach(el => {
-        el.style.fontSize = tamanhosDeFonte[event.target.value];
-      });
-    } else if (event.target.value === "reset") {
-      body.style.backgroundColor = "";
-      if (footer) footer.style.backgroundColor = "initial";
-      if (welcomeSection) {
-        welcomeSection.style.backgroundColor = "";
-        welcomeSection.style.color = "";
-      }
-      document.querySelectorAll("body, body *").forEach(el => {
-        el.style.fontSize = "2rem"; // Volta ao tamanho padrão
-      });
-    }
-  };
+    body.style.backgroundColor = '#000';
+    if (footer) footer.style.backgroundColor = '#000';
 
-  // Adiciona evento de rolagem para verificar se chegou ao final da página
-  useEffect(() => {
-    const verificarFimDaPagina = () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        if (speechSynthesis.speaking) {
-          speechSynthesis.pause();
-          setIsPaused(true);
+    const secoes = [
+      ...document.querySelectorAll('section'),
+      document.querySelector('.welcome'),
+      document.querySelector('.know-us'),
+      document.querySelector('.historia'),
+      document.querySelector('.content-container'),
+      document.querySelector('.pastors-section'),
+      document.querySelector('.courses'),
+      document.querySelector('.eventos'),
+      document.querySelector('.doacao'),
+      document.querySelector('h2.sub-titulo'),
+      document.querySelector('table.agenda'),
+      ...document.querySelectorAll('div.course'),
+    ];
+
+    secoes.forEach((secao) => {
+      if (secao) {
+        secao.style.backgroundColor = '#000';
+        secao.style.color = '#fff';
+        secao.querySelectorAll('h1, h2, h3, h4, p, span, a, strong, div, li, td, th').forEach((el) => {
+          el.style.color = '#fff';
+        });
+
+        if (secao.tagName === 'TABLE') {
+          secao.style.borderColor = '#fff';
+          secao.querySelectorAll('td, th').forEach((celula) => {
+            celula.style.borderColor = '#fff';
+          });
         }
       }
-    };
+    });
+  };
 
+  const alterarFonte = (tamanho) => {
+    document.querySelectorAll('body, body *').forEach((el) => {
+      el.style.fontSize = tamanho;
+    });
+  };
+
+  const resetarConfiguracoes = () => {
+    const body = document.body;
+    const footer = document.getElementById('pageFooter');
+    const welcomeSection = document.querySelector('.welcome');
+
+    body.removeAttribute('style');
+    if (footer) footer.removeAttribute('style');
+    if (welcomeSection) welcomeSection.removeAttribute('style');
+
+    document.querySelectorAll('body, body *').forEach((el) => {
+      el.style.fontSize = '';
+      el.style.backgroundColor = '';
+      el.style.color = '';
+    });
+
+    setSelectedOption('');
+  };
+
+  useEffect(() => {
     window.addEventListener('scroll', verificarFimDaPagina);
+
     return () => {
       window.removeEventListener('scroll', verificarFimDaPagina);
     };
   }, []);
 
+  const handleChange = (e) => {
+    const valor = e.target.value;
+    setSelectedOption(valor);
+
+    const tamanhosDeFonte = {
+      'fonte-pequena': '0.8rem',
+      'fonte-media': '1.6rem',
+      'fonte-grande': '2rem',
+    };
+
+    if (valor === 'cor') {
+      alterarCorDaPagina();
+    } else if (valor in tamanhosDeFonte) {
+      alterarFonte(tamanhosDeFonte[valor]);
+    } else if (valor === 'reset') {
+      resetarConfiguracoes();
+    }
+  };
+
   return (
-    <body>
+    <div>
       <main>
+        <div className="container">
+          <div className="header">
+            <h1 className="titulo">
+              <img className="logomarca" src="/images/logo.jpg" alt="Logo Igreja Novo Tempo" />
+              Novo Tempo - A Igreja da Família
+            </h1>
 
-    <div className="container">
-      <div className="header">
-        <h1 className="titulo">
-          <img className="logomarca" src="/images/logo.jpg" alt="Logo Igreja Novo Tempo" />
-          Novo Tempo - A Igreja da Família
-        </h1>
+            <nav className="nav">
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/whoweare">Quem Somos</Link></li>
+                <li><Link to="/ctn">CNT</Link></li>
+                <li><Link to="/ebnt">EBNT</Link></li>
+                <li><Link to="/sos">SOS</Link></li>
+                <li><Link to="/events">Eventos</Link></li>
+                <li><Link to="/generosity">Generosidade</Link></li>
+                <li><Link to="/location">Localização</Link></li>
+              </ul>
+            </nav>
 
-        <nav className="nav">
-          <ul>
-            <li>
-            <Link to = {'/'}>Home</Link>
-            </li>
-          
-          <li>
-          <Link to = {'./whoweare'}>Quem Somos</Link> 
-              </li>
-         
-          <li>
-          <Link to = {'./ctn'}>CNT</Link>
-              </li>
-          
-          <li>
-          <Link to = {'./ebnt'}>EBNT</Link>
-              </li>
-         
-          <li>
-          <Link to = {'./sos'}>Sos</Link> 
-              </li>
-       
-          <li>
-          <Link to = {'./events'}>Eventos</Link>
-              </li>
-          
-          <li>
-          <Link to = {'./generosity'}>Generosidade</Link>
-              </li>
-          <li>
-          <Link to = {'./location'}>Localização</Link>
-              </li>
-         
-           
-           {/* <li><a href="/home">Home</a></li>
-            <li><a href="/quemsomos">Quem Somos</a></li>
-            <li><a href="/cnt">CNT</a></li>
-            <li><a href="/ebnt">EBNT</a></li>
-            <li><a href="/sos">SOS</a></li>
-            <li><a href="/events">Eventos</a></li>
-            <li><a href="/generosity">Generosidade</a></li>
-            <li><a href="/location">Localização</a></li> */}
-          </ul>
-        </nav>
-
-        <div className="Ouvir">
-          <button onClick={leitorDeTexto}>🔊 Ouvir Página</button>
-          <div className="acessibilidade container">
-            <label htmlFor="selecione"></label>
-            <select name="GrupoSelect" id="selecione" value={selectedOption} onChange={handleChange}>
-              <option value="" disabled>Escolha uma opção de fonte/cor:</option>
-              <option value="cor">Alterar Cor Da Página</option>
-              <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
-              <option value="fonte-media">Tamanho de Fonte Médio</option>
-              <option value="fonte-grande">Tamanho de Fonte Grande</option>
-              <option value="reset">Voltar ao Padrão</option>
-            </select>
+            <div className="Ouvir">
+              <button onClick={leitorDeTexto}>🔊 Ouvir Página</button>
+              <button onClick={pararLeitura}>🛑 Parar</button>
+              <div className="acessibilidade container">
+                <label htmlFor="selecione"></label>
+                <select
+                  name="GrupoSelect"
+                  id="selecione"
+                  value={selectedOption}
+                  onChange={handleChange}
+                >
+                  <option value="" disabled>
+                    Escolha uma opção de fonte/cor:
+                  </option>
+                  <option value="cor">Alterar Cor Da Página</option>
+                  <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                  <option value="fonte-media">Tamanho de Fonte Médio</option>
+                  <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                  <option value="reset">Voltar ao Padrão</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </main>
     </div>
-    </main>
-    </body>
   );
-}
+};
 
 export default Header;

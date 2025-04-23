@@ -27,13 +27,15 @@ function App() {
 
   return (
     <>
-      
+
+   
+      <body>
+     
+    
     
       <BrowserRouter>
-      <Header>
-        
-      </Header>
-
+   
+      <Header/>
 
  <Routes>
  
@@ -51,8 +53,10 @@ function App() {
  </Routes>
 <Footer/> 
 </BrowserRouter>
-
+</body>
     </>
+
+
   )
 }
 

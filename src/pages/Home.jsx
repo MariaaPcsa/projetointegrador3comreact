@@ -1,10 +1,10 @@
 import React from 'react';
-import '../index.css';
-import '../App.css';
+import '../index.css'
+import '../App.css'
+import '../components/css/home.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+
 
 
 
@@ -13,20 +13,15 @@ const Home = () => {
   return (
     <>
     
-     <body>
-      <Header/>
-      
-      
    
    
       <main className='container'>
       
-      <br /><br />
-        <h2 id="titulo">Novo Tempo - A Igreja da Família</h2>
+  
         
-        <br /><br />
+        
         <section className="welcome">
-          <br /><br />
+          
           <h3>Bem-vindo à nossa Família!    
           </h3>
           <p> Guiados pelo amor a Deus e ao próximo, nossa visão é ser uma igreja que acolhe, cuida e oferece apoio incondicional, ajudando cada irmão a crescer espiritualmente e viver em harmonia com o propósito de Cristo." <br />O principal objetivo é acolher e fortalecer espiritualmente os Usuários desta página. Pois:"pessoas são mais importantes que coisas".</p>
@@ -41,13 +36,13 @@ const Home = () => {
             allowFullScreen
           />
 
-          <br />
+         
 <section>
 <div className='on'>
  
- <h3>
+ <h4>
   Convidamos Você para ser junta a Nós para louvar a Deus estaremos ao vivo, confira a datas abaixo!
- </h3>
+ </h4>
  <h3> ⛪Cultos Oficiais</h3>
  <p>Quarta-feira - 20:00h</p>
  <p>Culto Posicionados para Prosperar</p>
@@ -62,10 +57,8 @@ const Home = () => {
 </div>
 </section>
 
-
         </section>
 
-      
 
         <h4 className="subTitulo2">A NOSSA IGREJA QUER TE CONHECER MELHOR! </h4>
    <div className="pesquisa">
@@ -79,14 +72,12 @@ const Home = () => {
    <button className='button-link'> Clique aqui para acessar o formulário</button>
             
           </a>
-          <br /><br />
+         
    </div>
-        
-       
 
       </main>
-      <Footer/>
-      </body>
+      
+    
      
     </>
   );
