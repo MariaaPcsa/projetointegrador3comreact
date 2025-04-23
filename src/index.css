@@ -3,3 +3,15 @@ body, html {
   padding: 0;
 }
 
+body {
+  
+  font-size: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  background-color: #e7e2e2dc;
+  color: #333;
+  width: 100%; 
+  box-sizing: border-box; 
+
+}
+

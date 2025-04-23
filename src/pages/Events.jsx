@@ -1,4 +1,5 @@
 import React from 'react'
+import '../index.css';
 import '../components/css/events.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
