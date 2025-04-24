@@ -50,7 +50,7 @@ const WhoWeAre = () => {
              Thaís, bióloga de formação, hoje neuropsicopedagoga e terapeuta, e Samuel, ex-supervisor de vendas, deixaram suas carreiras para servir em tempo integral no Reino de Deus, assumindo com coragem e fé a missão de conduzir pessoas ao encontro com Cristo.
           </p>
 
-          <h3 className="sub-titulo">Nossa Identidade</h3>
+          <h2 className="sub-titulo">Nossa Identidade</h2>
           <p>
             A trajetória da Novo Tempo é marcada por crescimento, não apenas em número, mas em profundidade espiritual. São vidas restauradas, famílias reerguidas e corações renovados. 
             </p>
@@ -111,7 +111,7 @@ src="./images/bispos.jpg"
 alt="bispos" className="imagem-secao "
 
 />
-        <h3>Bispo Samuel e Bispa Thais</h3>
+        <h3 className="sub-titulo">Bispo Samuel e Bispa Thais</h3>
         <p>
             Samuel, gerente da empresa Três Corações no ramo de vendas, e Thais, bióloga na Pfizer, tinham carreiras promissoras, mas sentiam um vazio interior. Diante de um forte chamado de Deus, foram profundamente tocados pela necessidade das comunidades carentes e perceberam um propósito maior em servir ao Senhor.
 
@@ -126,7 +126,7 @@ alt="Pastor Caio e Pastora Débora"
 
 />
        
-        <h3>Pastor Caio e Pastora Débora</h3>
+        <h3 className="sub-titulo">Pastor Caio e Pastora Débora</h3>
         <p>
             Com corações dispostos e cheios de fé, ouviram atentamente a voz de Deus e, com coragem, deixaram para trás seus planos pessoais para abraçar o ministério pastoral. Hoje, são referência de liderança jovem, inspirando muitos com seu testemunho e dedicação.
 
@@ -145,7 +145,7 @@ src="./images/ricardoepatricia.jpg"
 alt="Ricardo e Patricia"
 
 />
-        <h3>Pastor Ricardo e Pastora Patricia</h3>
+        <h3 className="sub-titulo">Pastor Ricardo e Pastora Patricia</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 
@@ -163,7 +163,7 @@ src="/images/renatoebarbara.jpg"
 alt="Renato e Barbara"
 
 />
-        <h3>Pastor Renato e Pastora Barbara</h3>
+        <h3 className="sub-titulo">Pastor Renato e Pastora Barbara</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 
@@ -181,7 +181,7 @@ src="./images/valdeci.jpg"
 alt="Valdeci"
 
 />
-        <h3>Pastor Valdeci</h3>
+        <h3 className="sub-titulo">Pastor Valdeci</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 
@@ -197,7 +197,7 @@ alt="Valdeci"
 src="./images/Eduardoedani.jpg"
 alt="Eduardo e Dani"
 />
-        <h3>Pastor Eduardo e Pastora Dani</h3>
+        <h3 className="sub-titulo">Pastor Eduardo e Pastora Dani</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 
