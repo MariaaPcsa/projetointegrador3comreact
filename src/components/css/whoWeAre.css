@@ -103,6 +103,8 @@ maim{
 
 h3{
   margin: 1rem 1rem;
+  font-size: 3rem;
+  font-weight: 200;
   
   
 }
@@ -112,7 +114,13 @@ margin: 1rem 1rem;
 }
 
 
-
+.eventos h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  color: black;
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
 
 
 
@@ -145,11 +153,14 @@ margin: 1rem 1rem;
   }
 
   .sub-titulo {
-      font-size: 15px;
+    
+    font-size: 20px;
   }
 
   h3 {
-      font-size: 15px;
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: 200;
   }
 
   .pastor p {
