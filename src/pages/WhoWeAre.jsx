@@ -94,7 +94,8 @@ const WhoWeAre = () => {
                 <p><em>"Amar a Deus e ao próximo" reflete nosso compromisso em apoiar o crescimento espiritual de todos, alinhando-se com Mateus 22:37-39.</em></p>
             </div>
             </section>
-            <h2 lassName="sub-titulo">🙏 Conheça nossos pastores</h2>
+            <h3 className="sub-titulo">🙏 Conheça nossos pastores </h3>
+            
 
       <section className='content-container'>
 
