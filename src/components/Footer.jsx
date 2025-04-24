@@ -54,13 +54,13 @@ const Footer = () => {
             </li>
             {/* <!-- Whatsapp --> */}
         
-            {/* <li>
+            <li>
                 <a href="#" className="midia-link-lista" id='voltar'>
                     <img src="../images/Seta-volta.jpg" alt="Ícone de seta para voltar" />
-                    <button>  </button>
-                    <span className='footer'>Inicio</span>
+                    
+                    {/* <span className='footer'>Inicio</span> */}
                 </a>
-            </li> */}
+            </li>
            
             
             {/* <!-- Retornar --> */}
