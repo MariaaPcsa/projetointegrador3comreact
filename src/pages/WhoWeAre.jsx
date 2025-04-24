@@ -73,7 +73,7 @@ const WhoWeAre = () => {
      
      {/*  <!-- Missão --> */}
             <div class="box">
-                <h3 className="sub-titulo">🎯 Missão</h3>
+                <h2 className="sub-titulo">🎯 Missão</h2>
                 <img
             src="/images/missao.jpg"
             alt="Imagem sobre a missão"
@@ -83,7 +83,7 @@ const WhoWeAre = () => {
             </div>
 
             <div className="box missao">
-                <h3 className="sub-titulo">👀 Visão</h3>
+                <h2 className="sub-titulo">👀 Visão</h2>
                 <img
             src="./images/visao.jpg"
             alt="Imagem sobre a missão"

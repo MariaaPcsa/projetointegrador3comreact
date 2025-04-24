@@ -58,7 +58,7 @@ const Footer = () => {
                 <a href="#" className="midia-link-lista" id='voltar'>
                     <img src="../images/Seta-volta.jpg" alt="Ícone de seta para voltar" />
                     
-                    {/* <span className='footer'>Inicio</span> */}
+                    
                 </a>
             </li>
            
@@ -71,7 +71,7 @@ const Footer = () => {
 
         <section>
             
-        <address>
+        <address className='address'>
               <p>Endereço: Rua: Jaime Duprat, Número: 530, Bairro: Parque Vitoria, Cidade: Franco da Rocha, Estado: SP,CEP:07857-0800 </p>
             </address>
             
