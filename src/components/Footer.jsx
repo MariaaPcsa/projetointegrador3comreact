@@ -6,7 +6,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Footer = () => {
   return (
     <>
-   
+   <section>
+
+  
+
+
     <div className='footer'>
         <section>
 
@@ -50,25 +54,35 @@ const Footer = () => {
             </li>
             {/* <!-- Whatsapp --> */}
         
-            <li>
-                <a href="#" className="midia-link-lista" id="retornar">
+            {/* <li>
+                <a href="#" className="midia-link-lista" id='voltar'>
                     <img src="../images/Seta-volta.jpg" alt="Ícone de seta para voltar" />
-                    <span>Inicio</span>
+                    <button>  </button>
+                    <span className='footer'>Inicio</span>
                 </a>
-            </li>
+            </li> */}
+           
             
             {/* <!-- Retornar --> */}
         </ul>
         </div>
         </section>
-        <addres>
-              <p>Endereço: Rua Jaime Duprat, 530, Bairro: Parque Vitoria, Cidade Franco da Rocha, Estado SP,CEP:07857-0800 </p>
-          <p>Telefone: (11) xxxx-xxxx| Email: </p>
-            </addres>
+
+
+        <section>
+            
+        <address>
+              <p>Endereço: Rua: Jaime Duprat, Número: 530, Bairro: Parque Vitoria, Cidade: Franco da Rocha, Estado: SP,CEP:07857-0800 </p>
+            </address>
             
           
           <p>&copy; 2025 Igreja Cristã Novo Tempo - Todos os direitos reservados.</p>
+        </section>
+      
+
+        
     </div>
+    </section>
    
      </>
   )

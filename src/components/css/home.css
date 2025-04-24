@@ -22,8 +22,9 @@
   #video {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     max-width: 800px;
+    min-width: 300px;
     height: auto;
     aspect-ratio: 16 / 9; /* Responsivo */
     border-radius: 10px;
@@ -127,9 +128,10 @@
       font-size: 1.1rem;
     }
   
-    #video {
-      width: 95%;
-    }
+    /* #video {
+      width: 800px;
+      
+    } */
   }
   
   /* Responsividade: Celulares pequenos */
@@ -162,8 +164,8 @@
       padding: 0.4rem;
     }
   
-    #video {
+    /* #video {
       width: 300px;
-    }
+    } */
   }
   

@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // import '../App.css';
+
 import '../components/css/header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [selectedOption, setSelectedOption] = useState('');
-
-  let speech = null;
-
+  let speechInstance = null;
+  
   const leitorDeTexto = () => {
     if (speechSynthesis.speaking && !isPaused) {
       speechSynthesis.pause();
@@ -19,19 +19,31 @@ const Header = () => {
       setIsPaused(false);
     } else {
       speechSynthesis.cancel();
-      const text = document.body.innerText;
-      speech = new SpeechSynthesisUtterance(text);
-      speech.lang = 'pt-BR';
-      speech.onend = () => setIsPaused(false);
-      speechSynthesis.speak(speech);
+  
+      // Verifica se há texto selecionado
+      const selectedText = window.getSelection().toString().trim();
+  
+      const text = selectedText || document.body.innerText;
+  
+      if (text.length > 0) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'pt-BR';
+  
+        utterance.onend = () => {
+          setIsPaused(false);
+        };
+  
+        speechInstance = utterance;
+        speechSynthesis.speak(speechInstance);
+      }
     }
   };
-
+  
   const pararLeitura = () => {
     speechSynthesis.cancel();
     setIsPaused(false);
   };
-
+  
   const verificarFimDaPagina = () => {
     if (
       window.innerHeight + window.scrollY >= document.body.offsetHeight &&
@@ -41,6 +53,7 @@ const Header = () => {
       setIsPaused(true);
     }
   };
+  
 
   const alterarCorDaPagina = () => {
     const body = document.body;
@@ -51,24 +64,26 @@ const Header = () => {
 
     const secoes = [
       ...document.querySelectorAll('section'),
-      document.querySelector('.welcome'),
-      document.querySelector('.know-us'),
-      document.querySelector('.historia'),
-      document.querySelector('.content-container'),
-      document.querySelector('.pastors-section'),
-      document.querySelector('.courses'),
-      document.querySelector('.eventos'),
-      document.querySelector('.doacao'),
-      document.querySelector('h2.sub-titulo'),
-      document.querySelector('table.agenda'),
-      ...document.querySelectorAll('div.course'),
-    ];
+    ...document.querySelectorAll('.welcome'),
+    ...document.querySelectorAll('.know-us'),
+    ...document.querySelectorAll('.historia'),
+    ...document.querySelectorAll('.content-container'),
+    ...document.querySelectorAll('.pastors-section'),
+    ...document.querySelectorAll('.courses'),
+    ...document.querySelectorAll('.eventos'),
+    ...document.querySelectorAll('.doacao'),
+    ...document.querySelectorAll('h2.sub-titulo'),
+    ...document.querySelectorAll('div.imag-footer span'),
+    ...document.querySelectorAll('table.agenda'),
+    ...document.querySelectorAll('div.pesquisa'),
+    ...document.querySelectorAll('div.on'),
+    ...document.querySelectorAll('div.course'),]
 
     secoes.forEach((secao) => {
       if (secao) {
         secao.style.backgroundColor = '#000';
         secao.style.color = '#fff';
-        secao.querySelectorAll('h1, h2, h3, h4, p, span, a, strong, div, li, td, th').forEach((el) => {
+        secao.querySelectorAll('h1, h2, h3, h4, p, span, a, strong, div, li, td, th, footer').forEach((el) => {
           el.style.color = '#fff';
         });
 
@@ -159,6 +174,7 @@ const Header = () => {
             <div className="Ouvir">
               <button onClick={leitorDeTexto}>🔊 Ouvir Página</button>
               <button onClick={pararLeitura}>🛑 Parar</button>
+              
               <div className="acessibilidade">
                 <label htmlFor="selecione"></label>
                 <select

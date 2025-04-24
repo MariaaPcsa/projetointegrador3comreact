@@ -1,5 +1,6 @@
 import React from 'react'
 import '../index.css';
+import '../App.css';
 import '../components/css/events.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -11,8 +12,10 @@ const Events = () => {
 <main>
         <h2 className="titulo-pagina">Eventos</h2>
         <div className="container-central">
+           
           <section className="eventos">
-            <h3>📅 Próximos Eventos</h3>
+          <p className='sub-titulo'>📅 Próximos Eventos</p>
+           
             <p>Acompanhe a agenda e participe dos nossos encontros!</p>
             <p>Use o botão "Adicionar" para incluir lembretes em sua agenda do Google!</p>
 
