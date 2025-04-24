@@ -42,13 +42,13 @@ const Home = () => {
         Convidamos Você para se juntar a Nós para louvar a Deus. Estaremos ao vivo, confira as datas abaixo!
       </h4>
       <h3>⛪ Cultos Oficiais</h3>
-      <p>Quarta-feira - 20:00h</p>
+      <p> 🗓 Quarta-feira - 20:00h</p>
       <p>Culto Posicionados para Prosperar</p>
-      <p>Domingo - 9:00h e 18:00h</p>
+      <p> 🗓 Domingo - 9:00h e 18:00h</p>
       <p>Culto da Família</p>
 
       <a href="https://www.youtube.com/@MinisterioNovotempo">
-        <button className='button-link-youtube'>Acesse o nosso canal no Youtube</button>
+        <button className='button-link-youtube'> 🎥 Acesse o nosso canal no Youtube</button>
       </a>
     </div>
   </section>
@@ -66,7 +66,7 @@ const Home = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button className='button-link'>Clique aqui para acessar o formulário</button>
+        <button className='button-link'> 💌Clique aqui para acessar o formulário</button>
       </a>
     </div>
   </section>
