@@ -135,8 +135,8 @@ const Header = () => {
 
     const tamanhosDeFonte = {
       'fonte-pequena': '0.8rem',
-      'fonte-media': '1.6rem',
-      'fonte-grande': '1.8rem',
+      'fonte-media': '1.3rem',
+      'fonte-grande': '1.7rem',
     };
 
     if (valor === 'cor') {
