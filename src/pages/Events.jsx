@@ -17,7 +17,7 @@ const Events = () => {
           <p className='sub-titulo'>📅 Próximos Eventos</p>
            
             <p>Acompanhe a agenda e participe dos nossos encontros!</p>
-            <p>Use o botão "Adicionar" para incluir lembretes em sua agenda do Google!</p>
+            <p> 🚨 Use o botão "Adicionar" para incluir lembretes em sua agenda do Google!</p>
 
             <table className="agenda">
               <thead>
