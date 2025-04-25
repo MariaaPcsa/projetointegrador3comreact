@@ -10,12 +10,12 @@ const Events = () => {
 
     
 <main>
-        <h2 className="titulo-pagina">Eventos</h2>
+        <h2 className="subTitulo">Eventos</h2>
         <div className="container-central">
            
           <section className="eventos">
-          <p className='sub-titulo'>📅 Próximos Eventos</p>
-           
+          <h3 className="subTitulo2">📅 Próximos Eventos</h3>
+          
             <p>Acompanhe a agenda e participe dos nossos encontros!</p>
             <p> 🚨 Use o botão "Adicionar" para incluir lembretes em sua agenda do Google!</p>
 
