@@ -60,7 +60,7 @@
   /* Estilizando o endereço e demais parágrafos */
   .footer addres,
   .footer p {
-    margin: 0.5rem 0;
+    margin: 0.5rem ;
     font-size: 1rem;
   }
   
@@ -87,70 +87,15 @@
       width: 15px;
       height: 15px;
     }
+
+    .footer addres,
+    .footer p {
+      margin: 0.5rem 0;
+      font-size: 0.8rem;
+      line-height: 0.6rem;
+    }
   }
   
   
  
-  /* Responsividade */
-  @media (max-width: 1024px) {
-    .header {
-      padding: 20px 0;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .titulo {
-      font-size: 1.4rem;
-      color: white  ;
-    }
-  
-    .nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: center;
-      padding: 15px 0;
-      line-height: 1rem;
-    }
-  
-    .titulo {
-      font-size: 1.25rem;
-    }
-  
-    .nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .logomarca {
-      width: 50px;
-    }
-  
-    .titulo {
-      font-size: 1rem;
-    }
-  
-    .nav a {
-      font-size: 0.9rem;
-      
-    }
-  
-    .Ouvir button {
-      font-size: 0.9rem;
-    }
-    
-    .address{
-      font-size: 0.6rem;
-
-    }
-
-  
-  }
   

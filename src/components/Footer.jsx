@@ -69,10 +69,10 @@ const Footer = () => {
         </section>
 
 
-        <section>
+        <section className='address'>
             
-        <address className='address'>
-              <p>Endereço: Rua: Jaime Duprat, Número: 530, Bairro: Parque Vitoria, Cidade: Franco da Rocha, Estado: SP,CEP:07857-0800 </p>
+        <address>
+              <p>Endereço: Rua: Jaime Duprat, Número: 530, Bairro: Parque Vitoria, Cidade: Franco da Rocha, Estado: SP, CEP:07857-0800 </p>
             </address>
             
           
