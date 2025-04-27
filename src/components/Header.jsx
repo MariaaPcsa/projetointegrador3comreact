@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // import '../App.css';
 
+
+
 import '../components/css/header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -153,7 +155,7 @@ const Header = () => {
       <main>
         <div className="">
           <div className="header">
-            <h1 className="titulo">
+            <h1 className="titulo-pagina">
 
               
               <img className="logomarca" src="./images/logo.jpg" alt="Logo Igreja Novo Tempo"

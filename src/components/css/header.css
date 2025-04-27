@@ -1,35 +1,42 @@
 .header {
   display: flex;
-  flex-direction: column; /* tudo empilhado verticalmente */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 2.5rem;
+  line-height: 1.5rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 2.4rem 2.4rem;
+  padding: 2.4rem;
   background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
   width: 100%;
   margin: 0;
   border-radius: 0 0 1rem 1rem;
   box-sizing: border-box;
+  color: white;
 }
 
-.titulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.titulo-pagina{
+  display: flex; /* Flex para colocar imagem e texto lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
   font-size: 2rem;
   font-weight: bold;
   color: white;
   margin-bottom: 1rem;
+  text-align: left; /* Se quiser o texto alinhado à esquerda */
+  gap: 10px; /* Espaço entre a logo e o texto */
 }
 
+
 .logomarca {
-  width: 70px;
+  width: 100%;
+  max-width: 80px; /* ajuste como preferir */
+ 
   height: auto;
   margin-right: 10px;
   border-radius: 45px;
 }
+
 
 .nav ul {
   list-style: none;
@@ -38,6 +45,7 @@
   padding: 0;
   margin: 0;
   justify-content: center;
+  flex-wrap: wrap; /* Adicionado para responsividade */
 }
 
 .nav a {
@@ -52,10 +60,9 @@
   color: #ffcc00;
 }
 
-
 /* Estilo do botão de ouvir */
 .Ouvir button {
-  padding: 0.2rem;
+  padding: 0.2rem 0.5rem;
   margin: 0.1rem;
   font-size: 1rem;
   background-color: #216fc2b3;
@@ -64,7 +71,6 @@
   cursor: pointer;
   border-radius: 4px;
   transition: 0.3s;
-   
 }
 
 .Ouvir button:hover {
@@ -83,69 +89,65 @@
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-  
+
+/* RESPONSIVIDADE */
+
+/* Para telas menores que 768px (tablets) */
 @media (max-width: 768px) {
   .header {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    padding: 1rem;
-    color: white;
-    text-align: center;
+    padding: 1.5rem;
   }
 
-  .header .logo,
-  .header nav {
-    width: 100%;
-    justify-content: center;
+ .titulo-pagina{
+    font-size: 1.6rem;
   }
 
-  .header ul {
-    flex-direction: row;
-    gap: 0.5rem;
-    justify-content: center;
+  .nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
-/* Para telas menores que 480px (celulares pequenos) */
+/* Para telas menores que 480px (celulares) */
 @media (max-width: 480px) {
   .header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  
+    padding: 1rem;
   }
 
-  .header nav {
-    width: 100%;
-    justify-content: center;
+  .titulo-pagina {
+    font-size: 1rem; /* Texto um pouco menor no celular */
+    justify-content: flex-start; /* Alinha no início, mais natural no mobile */
+    padding-left: 0.2rem; /* Dá um espacinho da borda */
+ 
   }
   
-  .titulo{
-    font-size: 1.4rem;
-  }
-
-  .header ul li {
+  .nav ul {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    
+  }
 
+  .nav ul li a {
+    font-size: 0.9rem;
+    margin: 0.2rem;
   }
+
   .Ouvir button {
-    margin: 0.3rem;
+    margin: 0.5rem 0;
     font-size: 1rem;
-   
-     
   }
-  .acessibilidade select{
-    padding: 0.3rem;
+
+  .acessibilidade select {
+    margin-right: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .logomarca {
+    width: 55px; /* Diminui o tamanho da logo no celular */
+   margin: 0;
+   
   }
  
 }
+
