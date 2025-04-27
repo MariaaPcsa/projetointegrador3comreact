@@ -16,7 +16,7 @@ const WhoWeAre = () => {
    
    <main>
 
-      <h2 className="sub-titulo">Quem Somos</h2>
+      <h2 className="titulo">Quem Somos</h2>
      
 
       <section className="historia">
@@ -79,10 +79,10 @@ const WhoWeAre = () => {
             alt="Imagem sobre a missão"
             className="imagem-secao "
           />
-                <p>Transformando vidas e espalhando a luz do Evangelho, nossa missão é levar a mensagem de salvação e amor de Cristo a todos, para que cada coração experimente Sua graça e viva no propósito eterno de Deus.</p>
+                <p className='missao-texto'>Transformando vidas e espalhando a luz do Evangelho, nossa missão é levar a mensagem de salvação e amor de Cristo a todos, para que cada coração experimente Sua graça e viva no propósito eterno de Deus.</p>
             </div>
-
-            <div className="box missao">
+            {/* Visão e  */}
+            <div className="box">
                 <h2 className="sub-titulo">👀 Visão</h2>
                 <img
             src="./images/visao.jpg"
@@ -90,8 +90,8 @@ const WhoWeAre = () => {
             className="imagem-secao "
           />
                
-                <p>Guiados pelo amor a Deus e ao próximo, nossa visão é ser uma igreja que acolhe, cuida e oferece apoio incondicional, ajudando cada irmão a crescer espiritualmente e viver em harmonia com o propósito de Cristo.</p>
-                <p><em>"Amar a Deus e ao próximo" reflete nosso compromisso em apoiar o crescimento espiritual de todos, alinhando-se com Mateus 22:37-39.</em></p>
+                <p className='missao-texto'>Guiados pelo amor a Deus e ao próximo, nossa visão é ser uma igreja que acolhe, cuida e oferece apoio incondicional, ajudando cada irmão a crescer espiritualmente e viver em harmonia com o propósito de Cristo.</p>
+                <p className='missao-texto'><em>"Amar a Deus e ao próximo" reflete nosso compromisso em apoiar o crescimento espiritual de todos, alinhando-se com Mateus 22:37-39.</em></p>
             </div>
             </section>
             <h3 className="sub-titulo">🙏 Conheça nossos pastores </h3>

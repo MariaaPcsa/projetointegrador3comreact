@@ -1,12 +1,19 @@
 
-
-.sub-titulo {
+.titulo {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.3rem;
   color: black;
+ font-weight: 800;
+}
+.sub-titulo {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+ font-weight: 600;
 }
 
 /* História */
@@ -28,11 +35,17 @@
   padding: 1rem;
 
 }
+.historia p{
+  font-size: 1.2rem;
+  line-height: 1.3;
+margin: 1rem 1rem;
+
+}
 
 
 .imagem-historia {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   height: auto;
   border-radius: 1rem;
   display: block;
@@ -54,10 +67,16 @@
 
 }
 
+.missao-texto{
+  
+  line-height: 1.2;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
 .box {
   flex: 1 1 300px;
   background-color: #eaf2f8;
-  padding: 5rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   max-width: 500px;
   background-color: #f6e4f14b;
@@ -67,12 +86,13 @@
 
 .imagem-secao {
   width: 100%;
-  max-width: 700px; /* ajuste como preferir */
+  max-width: 250px; /* ajuste como preferir */
   height: auto;
   border-radius: 1rem;
   display: block;
-  margin: 2px; /* essa linha centraliza horizontalmente */
+  margin: 0.5rem auto; /* centraliza horizontalmente */
 }
+
 
 /* Pastores */
 
@@ -92,7 +112,7 @@
 
 .pastor img {
   width: 100%;
-  max-width: 300px; /* ou o valor que preferir, tipo 500px, 400px */
+  max-width: 250px; 
   height: auto;
   border-radius: 1rem;
   margin: 5px auto;
@@ -107,18 +127,12 @@ h3{
   
 }
 .pastor P{
-line-height: 1.3;
-margin: 1rem 1rem;
+line-height: 1.2;
+margin: 0.5rem;
 }
 
 
-.eventos h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.6rem;
-  color: black;
-  margin-bottom: 2rem;
-  font-weight: 200;
-}
+
 
 
 
@@ -133,12 +147,12 @@ margin: 1rem 1rem;
   .box,
   .pastor {
       max-width: 100%;
-      font-size: 18px;
+      font-size: 12px;
       padding: 5px;
   }
 
   .historia-box {
-    font-size: 20px;
+    font-size: 12px;
       padding: 10px;
   }
 
@@ -152,12 +166,12 @@ margin: 1rem 1rem;
 
   .sub-titulo {
     
-    font-size: 16px;
+    font-size: 12px;
   }
 
 
   h3 {
-    font-size: 16px;
+    font-size: 12px;
     padding: 0 10px;
     font-weight: 200;
   }
