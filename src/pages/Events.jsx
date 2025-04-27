@@ -10,7 +10,7 @@ const Events = () => {
 
     
 <main>
-        <h2 className="subTitulo">Eventos</h2>
+        <h2 className="titulo">Eventos</h2>
         <div className="container-central">
            
           <section className="eventos">
