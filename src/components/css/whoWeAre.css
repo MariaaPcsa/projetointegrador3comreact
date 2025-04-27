@@ -156,13 +156,17 @@ margin: 0.5rem;
       padding: 10px;
   }
 
-  .imagem-historia,
+  
   .imagem-secao,
   .pastor img {
       max-width: 100%;
-      max-width: 150px;
+      max-width: 200px;
       height: auto;
       margin: 10px auto;
+  }
+  .imagem-historia{
+    max-width: 100%;
+      max-width: 400px;
   }
 
   .sub-titulo {
