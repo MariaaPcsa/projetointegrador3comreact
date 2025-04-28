@@ -155,12 +155,17 @@ const Header = () => {
       <main>
         <div className="">
           <div className="header">
+
+
             <h1 className="titulo-pagina">
 
-              
+              <a href="/">
               <img className="logomarca" src="./images/logo.jpg" alt="Logo Igreja Novo Tempo"
               
               />
+                
+              </a>
+             
               Novo Tempo - A Igreja da Família
             </h1>
 

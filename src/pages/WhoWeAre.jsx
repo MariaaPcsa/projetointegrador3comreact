@@ -3,6 +3,16 @@ import '../index.css'
 import '../App.css'
 import '../components/css/whoWeAre.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import historia from '/images/historia.jpg'
+import visao from '/images/visao.jpg'
+import missao from '/images/missao.jpg'
+import bispos from '/images/bispos.jpg'
+import deboraecaio from '/images/deboraecaio.jpg'
+import ricardoepatricia from '/images/ricardoepatricia.jpg'
+import renatoebarbara from '/images/renatoebarbara.jpg'
+import valdeci from '/images/valdeci.jpg'
+import Eduardoedani from '/images/Eduardoedani.jpg'
+
 
 
 const WhoWeAre = () => {
@@ -18,7 +28,6 @@ const WhoWeAre = () => {
 
       <h2 className="titulo">Quem Somos</h2>
      
-
       <section className="historia">
         <div className="historia-box">
 
@@ -26,7 +35,7 @@ const WhoWeAre = () => {
 
         
           <img
-            src="/images/historia.jpg"
+            src={historia}
             alt="Foto do primeiro encontro da Igreja Novo Tempo"
             className="imagem-historia"
           />
@@ -75,7 +84,7 @@ const WhoWeAre = () => {
             <div class="box">
                 <h2 className="sub-titulo">🎯 Missão</h2>
                 <img
-            src="/images/missao.jpg"
+            src={missao}
             alt="Imagem sobre a missão"
             className="imagem-secao "
           />
@@ -85,7 +94,7 @@ const WhoWeAre = () => {
             <div className="box">
                 <h2 className="sub-titulo">👀 Visão</h2>
                 <img
-            src="./images/visao.jpg"
+            src={visao}
             alt="Imagem sobre a missão"
             className="imagem-secao "
           />
@@ -108,7 +117,7 @@ const WhoWeAre = () => {
                 
                     
         <img
-src="./images/bispos.jpg"
+src={bispos}
 alt="bispos" className="imagem-secao "
 
 />
@@ -122,7 +131,7 @@ alt="bispos" className="imagem-secao "
 
     <div className="pastor">
     <img
-src="./images/deboraecaio.jpg"
+src={deboraecaio}
 alt="Pastor Caio e Pastora Débora"
 
 />
@@ -142,7 +151,7 @@ alt="Pastor Caio e Pastora Débora"
     <div className="pastor">
         
         <img
-src="./images/ricardoepatricia.jpg"
+src={ricardoepatricia} 
 alt="Ricardo e Patricia"
 
 />
@@ -160,7 +169,7 @@ alt="Ricardo e Patricia"
         
                    
         <img
-src="/images/renatoebarbara.jpg"
+src={renatoebarbara}
 alt="Renato e Barbara"
 
 />
@@ -178,7 +187,7 @@ alt="Renato e Barbara"
         
 
         <img
-src="./images/valdeci.jpg"
+src={valdeci}
 alt="Valdeci"
 
 />
@@ -195,7 +204,7 @@ alt="Valdeci"
     <div className="pastor">
       
         <img
-src="./images/Eduardoedani.jpg"
+src={Eduardoedani}
 alt="Eduardo e Dani"
 />
         <h3 className="sub-titulo">Pastor Eduardo e Pastora Dani</h3>
@@ -208,35 +217,10 @@ alt="Eduardo e Dani"
         </p>
     </div>
 
-
-      </section>
-
-
-
-
-   
-
-         
-            
-
-
-     
-            
-       
-      
+      </section>           
     
     </main>
     
-
-  
-
-
-  
-  
-   
-  
- 
-
     </>
   )
 }

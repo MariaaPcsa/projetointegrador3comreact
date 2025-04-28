@@ -48,7 +48,7 @@ const Footer = () => {
             {/* <!-- TikTok --> */}
         
             <li>
-                <a className="midia-link-lista"  href="http://web.whatsapp.com" target="_blank">
+                <a className="midia-link-lista"  href="https://wa.me/5511918330406" target="_blank">
                     <img src="../images/imagwhatsapp.jpg" alt="Ícone do Whatsapp" />
                 </a>
             </li>

@@ -18,7 +18,7 @@ const Home = () => {
     <main className='container'>
        <section>
   <section className="welcome">
-    <h3>Bem-vindo à nossa Família!</h3>
+    <h3 className='titulo'>Bem-vindo à nossa Família!</h3>
     <p>
       Guiados pelo amor a Deus e ao próximo, nossa visão é ser uma igreja que acolhe, cuida e oferece apoio incondicional, ajudando cada irmão a crescer espiritualmente e viver em harmonia com o propósito de Cristo."
       <br />
@@ -41,7 +41,7 @@ const Home = () => {
       <h4>
         Convidamos Você para se juntar a Nós para louvar a Deus. Estaremos ao vivo, confira as datas abaixo!
       </h4>
-      <h3>⛪ Cultos Oficiais</h3>
+      <h3 className='sub-titulo'>⛪ Cultos Oficiais</h3>
       <p> 🗓 Quarta-feira - 20:00h</p>
       <p>Culto Posicionados para Prosperar</p>
       <p> 🗓 Domingo - 9:00h e 18:00h</p>
@@ -54,19 +54,19 @@ const Home = () => {
   </section>
 
   <section>
-    <h4 className="subTitulo2">A NOSSA IGREJA QUER TE CONHECER MELHOR!</h4>
+    <h4 className="sub-titulo">A nossa igreja quer te conhecer melho!</h4>
     <div className="pesquisa">
       <p>
         Estamos felizes por você estar conosco! Queremos saber mais sobre você para oferecer a melhor acolhida possível e ajudá-lo a se sentir parte de nossa família. Por favor, responda às perguntas.
       </p>
 
-      <p>Acessar o formulário abaixo!</p>
+      <p className='sub-titulo'>Acessar o formulário abaixo!</p>
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLScBrZ-7H9EToYZFedkFJhxYEkckoNlz3kjOe1HWFSV_96fHuw/viewform"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button className='button-link'> 💌Clique aqui para acessar o formulário</button>
+        <button className='button-link-google'> 💌Clique aqui para acessar o formulário</button>
       </a>
     </div>
   </section>
