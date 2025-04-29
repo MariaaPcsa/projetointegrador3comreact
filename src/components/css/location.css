@@ -1,9 +1,12 @@
 
 /* location.css */
 
-
+main {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
   
-  h2 {
+  main h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 1.6rem;
@@ -12,8 +15,7 @@
    font-weight: 800;
   }
   
-   p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+   main p {
     line-height: 1.2rem;
     margin: 1.2rem;
     padding: 0.5rem;
