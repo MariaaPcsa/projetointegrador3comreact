@@ -10,8 +10,8 @@ main{
   margin: 40px auto;
   padding: 10px;
   background-color: #f6e4f14b;
-  border-top: 1px solid  #ff00e150;
-  border-bottom: 1px solid #ff00e150;
+  border-top: 0.5rem solid  #58137350;
+   border-bottom: 0.1rem solid #58137350;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
