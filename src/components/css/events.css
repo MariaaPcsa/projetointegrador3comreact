@@ -82,7 +82,7 @@ margin-top: 2rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.agenda th, .agenda td  th{
+.agenda th, .agenda td  {
   font-size: 15px;
   padding: 12px;
   text-align: center;
