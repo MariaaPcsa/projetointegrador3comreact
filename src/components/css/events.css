@@ -4,6 +4,7 @@ main{
 
 /* Estilo da Seção de Eventos */
 .eventos {
+  line-height: 0.2rem;
   width: 90%;
   max-width: 1000px;
   margin: 40px auto;
@@ -50,14 +51,17 @@ margin-top: 2rem;
   border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
+  line-height: 0.2rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .agenda thead {
   background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
   color: white;
   font-weight: bold;
   border-radius: 2rem;
+  line-height: 0.2rem;
  
 
 }
@@ -67,6 +71,8 @@ margin-top: 2rem;
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #ddd;
+  line-height: 0.2rem;
+
 
 }
 
