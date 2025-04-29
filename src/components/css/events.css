@@ -62,8 +62,13 @@ margin-top: 2rem;
   font-weight: bold;
   border-radius: 2rem;
   line-height: 1.5rem;
+  margin: 0.5rem;
  
 
+}
+.agenda thead :hover {
+  background-color: #0b243d;
+  transform: scale(1.05);
 }
 
 .agenda th, .agenda td  th{
