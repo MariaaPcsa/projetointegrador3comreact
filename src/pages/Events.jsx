@@ -40,7 +40,7 @@ const Events = () => {
                       rel="noopener noreferrer"
                       className="add-calendar"
                     >
-                      <button className="button-link">Adicionar</button>
+                      <button className="button">Adicionar</button>
                     </a>
                   </td>
                 </tr>
@@ -56,7 +56,7 @@ const Events = () => {
                       rel="noopener noreferrer"
                       className="add-calendar"
                     >
-                      <button className="button-link">Adicionar</button>
+                      <button className="button">Adicionar</button>
                     </a>
                   </td>
                 </tr>
@@ -72,7 +72,7 @@ const Events = () => {
                       rel="noopener noreferrer"
                       className="add-calendar"
                     >
-                      <button className="button-link">Adicionar</button>
+                      <button className="button">Adicionar</button>
                     </a>
                   </td>
                 </tr>
