@@ -4,7 +4,7 @@ main{
 
 /* Estilo da Seção de Eventos */
 .eventos {
-  line-height: 0.2rem;
+  line-height: 1rem;
   width: 90%;
   max-width: 1000px;
   margin: 40px auto;
@@ -53,6 +53,7 @@ margin-top: 2rem;
   overflow: hidden;
   line-height: 1.5rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 
