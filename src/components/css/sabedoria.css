@@ -1,0 +1,113 @@
+.sabedoria {
+    font-size: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 10rem 2rem 10rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f6e4f14b;
+    border-top: 0.5rem solid  #58137350;
+     border-bottom: 0.1rem solid #58137350;
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  margin-top: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 800;
+  }
+  
+  
+  
+  .subTitulo {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+   font-weight: 600;
+  }
+  
+  .sabedoria p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 0.5rem;
+  }
+
+  #versiculo {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+    color:  #6d318c;
+    background-color: #f6e4f14b;
+    border-top: 0.5rem solid  #58137350;
+     border-bottom: 0.1rem solid #58137350;
+    font-weight: 600;
+    border-radius: 0.5rem;
+  }
+  
+  /* Responsividade para tablets */
+  @media (max-width: 768px) {
+    
+  
+    .sabedoria {
+      
+       margin: 0;
+    }
+  
+    .sabedoria h2 {
+      font-size: 1.7rem;
+    }
+  
+.sabedoria p {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+    }
+  }
+  
+  /* Responsividade para celulares */
+  @media (max-width: 480px) {
+    
+  
+    .sabedoria {
+      padding: 1rem;
+    }
+  
+    .titulo {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+      margin-top: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+       font-weight: 800;
+      }
+      
+      
+      
+      .subTitulo {
+        text-align: center;
+        font-size: 1.2rem;
+       font-weight: 400;
+      }
+  
+    .sabedoria p {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+
+    }
+    #versiculo{
+        font-size: 1rem;
+        line-height: 1.4rem;
+
+    }
+  }
+  

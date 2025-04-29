@@ -175,7 +175,7 @@ const Header = () => {
                 <li><Link to="/whoweare">Quem Somos</Link></li>
                 <li><Link to="/ctn">CNT</Link></li>
                 <li><Link to="/ebnt">EBNT</Link></li>
-                <li><Link to="/sos">SOS</Link></li>
+                <li><Link to="/sabedoria">Sabedoria</Link></li>
                 <li><Link to="/events">Eventos</Link></li>
                 <li><Link to="/generosity">Generosidade</Link></li>
                 <li><Link to="/location">Localização</Link></li>

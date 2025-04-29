@@ -9,13 +9,13 @@ import Header from "./components/Header";
 
 import Home from "./pages/Home";
 import Location from "./pages/Location";
-import Sos from "./pages/Sos";
 import Events from "./pages/Events";
 import Generosity from "./pages/Generosity";
 import Ctn from "./pages/Ctn";
 import Ebnt from "./pages/Ebnt";
 import WhoWeAre from "./pages/WhoWeAre";
 import Footer from "./components/Footer";
+import Sabedoria from "./pages/Sabedoria";
 
 
 
@@ -43,7 +43,7 @@ function App() {
 <Route path="/events" element={<Events/>} />
    <Route path="/generosity" element={<Generosity/>} /> 
    <Route path="/location" element={<Location/>} /> 
-   <Route path="/sos" element={<Sos/>} /> 
+   <Route path="/sabedoria" element={<Sabedoria/>} />  */}
    <Route path="/ctn" element={<Ctn/>} />
    <Route path="/ebnt" element={<Ebnt/>} />
    <Route path="/whoweare" element={<WhoWeAre/>} />

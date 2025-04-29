@@ -35,8 +35,8 @@ main {
     border-radius: 10px;
     overflow: hidden;
     background-color: #f6e4f14b;
-  border-top: 2px solid  #ff00e150;
-   border-bottom: 2px solid #ff00e150;
+  border-top: 0.5rem solid  #58137350;
+   border-bottom: 0.1rem solid #58137350;
   }
   
   .map-container iframe {
