@@ -51,7 +51,7 @@ margin-top: 2rem;
   border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
-  line-height: 1rem;
+  line-height: 1.5rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -61,7 +61,7 @@ margin-top: 2rem;
   color: white;
   font-weight: bold;
   border-radius: 2rem;
-  line-height: 01rem;
+  line-height: 1.5rem;
  
 
 }
@@ -71,7 +71,7 @@ margin-top: 2rem;
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #ddd;
-  line-height: 1rem;
+  line-height: 1.5rem;
 
 
 }
@@ -91,6 +91,7 @@ margin-top: 2rem;
   padding: 2px;
   color: white;
   border-radius: 8px;
+  line-height: 1.5rem;
 }
 
 /* Responsividade para tablets */
