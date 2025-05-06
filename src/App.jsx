@@ -43,7 +43,7 @@ function App() {
 <Route path="/events" element={<Events/>} />
    <Route path="/generosity" element={<Generosity/>} /> 
    <Route path="/location" element={<Location/>} /> 
-   <Route path="/sabedoria" element={<Sabedoria/>} />  */}
+   <Route path="/sabedoria" element={<Sabedoria/>} /> 
    <Route path="/ctn" element={<Ctn/>} />
    <Route path="/ebnt" element={<Ebnt/>} />
    <Route path="/whoweare" element={<WhoWeAre/>} />

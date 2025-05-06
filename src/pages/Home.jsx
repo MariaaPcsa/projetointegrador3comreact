@@ -50,7 +50,7 @@ const Home = () => {
       <p className='sub-titulo'>Acessar o canal no Youtube abaixo!</p>
 
       <a href="https://www.youtube.com/@MinisterioNovotempo">
-        <button className='button-link-youtube'> 🎥 Youtube</button>
+        <button className='button-link-youtube'> 🎥 Acesse o nosso canal no YouTube</button>
       </a>
     </div>
   </section>
@@ -68,7 +68,7 @@ const Home = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button className='button-link-google'> 💌Formulário</button>
+        <button className='button-link-google'> 💌Clique aqui para acessar o formulário</button>
       </a>
     </div>
   </section>
