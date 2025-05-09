@@ -192,7 +192,11 @@ alt="Renato e Barbara"
 
 
 </p>
+<p>
+
+
             Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
+            </p>
 <p>
             Nosso coração pulsa por vidas transformadas pela graça de Jesus. Queremos caminhar com você, celebrar suas vitórias e estender a mão nas suas lutas. Estamos aqui para ouvir, ensinar, orar e, acima de tudo, amar.
         </p>
@@ -228,9 +232,11 @@ alt="Eduardo e Dani"
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 </p>
+
 <p>
             Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
 </p>
+
 <p>
             Nosso coração pulsa por vidas transformadas pela graça de Jesus. Queremos caminhar com você, celebrar suas vitórias e estender a mão nas suas lutas. Estamos aqui para ouvir, ensinar, orar e, acima de tudo, amar.
         </p>
