@@ -126,6 +126,9 @@ alt="bispos" className="imagem-secao "
         <p>
             Samuel, gerente da empresa Três Corações no ramo de vendas, e Thais, bióloga na Pfizer, tinham carreiras promissoras, mas sentiam um vazio interior. Diante de um forte chamado de Deus, foram profundamente tocados pela necessidade das comunidades carentes e perceberam um propósito maior em servir ao Senhor.
 
+
+</p>
+<p>
             Enfrentaram desafios financeiros e a incompreensão de muitos, mas a fé os sustentou. Com o tempo, suas iniciativas prosperaram, impactando inúmeras vidas. Hoje, seguem firmes na missão, testemunhando que a verdadeira realização está em servir a Deus e ao próximo.
         </p>
     </div>
@@ -141,10 +144,17 @@ alt="Pastor Caio e Pastora Débora"
         <p>
             Com corações dispostos e cheios de fé, ouviram atentamente a voz de Deus e, com coragem, deixaram para trás seus planos pessoais para abraçar o ministério pastoral. Hoje, são referência de liderança jovem, inspirando muitos com seu testemunho e dedicação.
 
+
+</p>
+<p>
+
+
             Atualmente, a pastora Débora e o pastor Caio servem no Nordeste, levando a mensagem do evangelho e fortalecendo a comunidade da nossa igreja. Com amor e compromisso, trabalham para transformar vidas, guiando jovens e famílias no caminho da fé.
-
+</p>
+<p>
             O pastor Caio é formado em Bacharelado em Teologia pela UMESP (Universidade Metodista de São Paulo) e a pastora Débora é pedagoga, pós-graduada em Neuropsicologia, Psicomotricidade e Psicopedagogia. Além de sua atuação no ministério pastoral, ambos se dedicam ao ensino teológico, compartilhando seu profundo conhecimento e experiência para formar futuros líderes espirituais.
-
+</p>
+<p>
             Seu exemplo é um reflexo do poder de Deus agindo através de corações dispostos a servi-Lo.
         </p>
     </div>
@@ -159,9 +169,11 @@ alt="Ricardo e Patricia"
         <h3 className="sub-titulo">Pastor Ricardo e Pastora Patricia</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
-
+</p>
+<p>
             Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
-
+</p>
+<p>
             Nosso coração pulsa por vidas transformadas pela graça de Jesus. Queremos caminhar com você, celebrar suas vitórias e estender a mão nas suas lutas. Estamos aqui para ouvir, ensinar, orar e, acima de tudo, amar.
         </p>
     </div>
@@ -178,8 +190,10 @@ alt="Renato e Barbara"
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 
-            Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
 
+</p>
+            Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
+<p>
             Nosso coração pulsa por vidas transformadas pela graça de Jesus. Queremos caminhar com você, celebrar suas vitórias e estender a mão nas suas lutas. Estamos aqui para ouvir, ensinar, orar e, acima de tudo, amar.
         </p>
     </div>
@@ -195,9 +209,11 @@ alt="Valdeci"
         <h3 className="sub-titulo">Pastor Valdeci</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
-
+</p>
+<p>
             Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
-
+</p>
+<p>
             Nosso coração pulsa por vidas transformadas pela graça de Jesus. Queremos caminhar com você, celebrar suas vitórias e estender a mão nas suas lutas. Estamos aqui para ouvir, ensinar, orar e, acima de tudo, amar.
         </p>
     </div>
@@ -211,9 +227,11 @@ alt="Eduardo e Dani"
         <h3 className="sub-titulo">Pastor Eduardo e Pastora Dani</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
-
+</p>
+<p>
             Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
-
+</p>
+<p>
             Nosso coração pulsa por vidas transformadas pela graça de Jesus. Queremos caminhar com você, celebrar suas vitórias e estender a mão nas suas lutas. Estamos aqui para ouvir, ensinar, orar e, acima de tudo, amar.
         </p>
     </div>
