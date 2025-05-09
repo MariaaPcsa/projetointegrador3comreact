@@ -64,6 +64,13 @@
     font-size: 1rem;
   }
   
+
+  .colaboradores {
+
+  font-style: italic;
+  color: #ffcc00;
+  font-size: 0.7rem;
+}
   /* Responsividade: Ajustes para telas até 768px */
   @media (max-width: 768px) {
     .footer {
@@ -93,6 +100,14 @@
       margin: 0.5rem 0;
       font-size: 0.8rem;
       line-height: 1rem;
+      
+    }
+    .colaboradores {
+
+      font-style: italic;
+      color: #ffcc00;
+     
+      font-size: 0.4rem;
     }
   }
   

@@ -79,7 +79,7 @@ const Footer = () => {
           <p>&copy; 2025 Igreja Cristã Novo Tempo - Todos os direitos reservados.</p>
         </section>
       
-
+<h4 class="colaboradores">Este Site foi desevolvido por estudantes de TI da Univesp(Universidade Virtual do Estado de São Paulo)</h4>
         
     </div>
     </section>

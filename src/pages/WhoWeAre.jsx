@@ -12,6 +12,7 @@ import ricardoepatricia from '/images/ricardoepatricia.jpg'
 import renatoebarbara from '/images/renatoebarbara.jpg'
 import valdeci from '/images/valdeci.jpg'
 import Eduardoedani from '/images/Eduardoedani.jpg'
+import AlunosModal from '../components/alunosModal/AlunosModal';
 
 
 
@@ -217,9 +218,32 @@ alt="Eduardo e Dani"
         </p>
     </div>
 
-      </section>           
+      </section> 
+
+      <section className="hSite">
+            <div className="container">
+              
+              <div className="texto">
+                <h3 className
+                ="sub-titulo">Surgimento do Site:</h3>
+                <h3>Uma Jornada de Propósito e Colaboração</h3>
+                <p>Em 07/02/2025, uma data que ficará marcada em nossa trajetória, fomos abordados por um grupo de dedicados estudantes de tecnologia da informação  da <strong>Univesp</strong>  (Universidade Virtual do Estado de São Paulo), que nos convidaram a participar de seu projeto integrador III. A proposta inicial era [ <strong>Atostech</strong> -conectando a Igreja ao futuro].</p>
+                <p>Aceitamos prontamente o convite, movidos pelo desejo de contribuir com o crescimento e desenvolvimento acadêmico desses jovens talentos. Contudo, no decorrer do processo de desenvolvimento, percebemos que aquele encontro não havia sido mera coincidência.</p>
+                <p>Sentimos que Deus nos proporcionou, através desses estudantes, uma oportunidade singular de levar Seus ensinamentos a um público ainda mais vasto. Expressamos nossa profunda gratidão a Ele por colocar em nosso caminho essas pessoas talentosas, que com esmero e dedicação desenvolveram nossa página.</p>
+                
+                <p>Os nomes desses colaboradores especiais permanecerão ocultos, más desejarem conhecer mais sobre essa inspiradora jornada, através de um clique em. <AlunosModal/> </p>
+                
+                    
+              
+                
+              </div>
+            </div>
+          </section>
+         
     
     </main>
+
+
     
     </>
   )
