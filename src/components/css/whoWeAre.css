@@ -137,9 +137,9 @@ h3{
 
 .hSite {
     padding: 40px;
-    background-color: #f6e4f14b;
-    border-top: 0.2rem solid  #58137350;
-     border-bottom: 0.1rem solid #58137350;
+       background-color: #f6e4f14b;
+  border-top: 0.5rem solid  #58137350;
+   border-bottom: 0.1rem solid #58137350;
      border-radius: 0.5rem;
   }
   
@@ -148,12 +148,9 @@ h3{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 20px;
-    
     background-color: #f6e4f14b;
     border-radius: 0.5rem;
-     border-left:0.1rem solid  #58137350 ;
-     border-right:0.1rem solid  #58137350 ;
+
 
       padding: 40px;
   }
