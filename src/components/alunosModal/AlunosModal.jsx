@@ -21,10 +21,15 @@ const AlunosModal = () => {
 
              <h3 className='sub-titulo'> 👨‍🎓 Alunos</h3>
         <p>
-              Adaildo S Da Silva, Alyssa A Silva,<br />
-              Andressa R G Marques, Cristina F Silva,<br />
-              Cicero M F Silva, Jefferson R Silva,<br />
-              Maria Ap C Santos, Vanderley F Magalhães.
+              Adaildo S Da Silva, 
+              <br />Alyssa A Silva,
+              <br />
+              Andressa R G Marques,
+              <br /> Cristina F Silva,
+              <br /> Cicero M F Silva, 
+              <br />Jefferson R Silva,<br />
+              Maria Ap C Santos, 
+              <br />Vanderley F Magalhães.
             </p>
            
                 <p>

@@ -100,7 +100,6 @@
 .pastor {
   flex: 1 1 300px;
   max-width: 350px;
-
   border-radius: 10px;
   padding: 15px;
   text-align: center;
@@ -150,6 +149,7 @@ h3{
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 20px;
+    
     background-color: #f6e4f14b;
     border-radius: 0.5rem;
      border-left:0.1rem solid  #58137350 ;
@@ -173,10 +173,11 @@ h3{
   }
   
   .texto p {
-    line-height: 1.5rem;
-    margin: 0.6rem;
-    font-size: 1.1rem;
-    text-align: left;
+   line-height: 1.2rem;
+  margin: 0.6rem;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 1rem;
   }
   
 
