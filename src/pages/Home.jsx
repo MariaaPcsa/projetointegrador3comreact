@@ -1,8 +1,9 @@
-import React from 'react';
-import '../index.css'
-import '../App.css'
+import React from 'react'
+import '../index.css';
+import '../App.css';
 import '../components/css/home.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 

@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/Header";
 
-import Home from "./pages/Home";
+
 import Location from "./pages/Location";
 import Events from "./pages/Events";
 import Generosity from "./pages/Generosity";
@@ -16,6 +16,7 @@ import Ebnt from "./pages/Ebnt";
 import WhoWeAre from "./pages/WhoWeAre";
 import Footer from "./components/Footer";
 import Sabedoria from "./pages/Sabedoria";
+import Home from "./pages/Home";
 
 
 
