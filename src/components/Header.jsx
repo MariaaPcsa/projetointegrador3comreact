@@ -152,7 +152,7 @@ const Header = () => {
 
   return (
     <div>
-      <main>
+     
         <div className="">
           <div className="header">
 
@@ -207,7 +207,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </main>
+      
     </div>
   );
 };

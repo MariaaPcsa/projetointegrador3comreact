@@ -10,6 +10,7 @@
   /* Seção das redes sociais */
   .footer section {
     margin-bottom: 1.5rem;
+    
   }
   
   /* Container das imagens */
@@ -21,7 +22,8 @@
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
-    gap: 1rem;                /* Espaço entre os itens */
+    gap: 1rem; 
+                /* Espaço entre os itens */
   }
   
   /* Estilo para cada link de mídia */
@@ -30,13 +32,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    /* background: #ffffff; */
     padding: 0.5rem;
     border-radius: 6px;
     transition: background 0.3s;
     font-size: 14px;
     font-weight: bold;
-    color: #333;
+    
   }
   
   /* Hover para os links */
@@ -55,6 +57,10 @@
   padding: 0;
 
 }
+
+p{
+    color: white;
+}
   
   
   /* Estilizando o endereço e demais parágrafos */
@@ -68,7 +74,7 @@
   .colaboradores {
 
   font-style: italic;
-  color: #ffcc00;
+color: white;
   font-size: 0.7rem;
 }
   /* Responsividade: Ajustes para telas até 768px */
