@@ -96,16 +96,16 @@ color: white;
   
   /* Responsividade: Ajustes para telas menores que 480px */
   @media (max-width: 480px) {
-    .midia-link-lista img {
-      width: 15px;
-      height: 15px;
+    .footer {
+      padding: 1rem 0.5rem;
+      font-size: 0.8rem;
     }
 
     .footer addres,
     .footer p {
       margin: 0.5rem 0;
       font-size: 0.8rem;
-      line-height: 1rem;
+      line-height: 1.2;
       
     }
     .colaboradores {
@@ -115,6 +115,12 @@ color: white;
      
       font-size: 0.4rem;
     }
+
+    .midia-link-lista img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;}
+
   }
   
   
