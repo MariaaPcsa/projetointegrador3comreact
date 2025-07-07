@@ -1,19 +1,16 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  line-height: 1.5rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 2.4rem;
+  
   background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+ display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 1.5rem;
   width: 100%;
   margin: 0;
-  border-radius: 0 0 1rem 1rem;
   box-sizing: border-box;
-  color: white;
-}
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  gap: 1rem; /* Espaço entre imagem e título */}
 
 .titulo-pagina{
   display: flex; /* Flex para colocar imagem e texto lado a lado */
@@ -29,12 +26,16 @@
 
 
 .logomarca {
-  width: 100%;
-  max-width: 20px; /* ajuste como preferir */
- 
+ max-width: 80px;
   height: auto;
-  margin-right: 10px;
   border-radius: 45px;
+  transition: transform 0.3s ease;
+  
+}
+
+.logomarca :hover {
+  transform: scale(1.06);
+   
 }
 
 
@@ -110,8 +111,16 @@
 
 /* Para telas menores que 480px (celulares) */
 @media (max-width: 480px) {
-  .header {
-    padding: 1rem;
+.header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .header img {
+    width: 80px;
   }
 
   .titulo-pagina {
@@ -128,8 +137,11 @@
   }
 
   .nav ul li a {
-    font-size: 0.9rem;
-    margin: 0.2rem;
+    flex-direction: row;         /* Mantém a lista em linha */
+    justify-content: center;
+    margin: 0.1rem 0 0;
+    gap: 0.5rem;
+     justify-content: flex-start; /* Alinha tudo à esquerda */
   }
 
   .Ouvir button {
