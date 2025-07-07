@@ -97,15 +97,17 @@ color: white;
   /* Responsividade: Ajustes para telas menores que 480px */
   @media (max-width: 480px) {
     .footer {
-      padding: 1rem 0.5rem;
-      font-size: 0.8rem;
+      padding: 1rem ;
+       font-size:1rem;
+       margin-left: 0.5rem;
+      line-height: 1.2rem;
     }
 
     .footer addres,
     .footer p {
-      margin: 0.5rem 0;
-      font-size: 0.8rem;
-      line-height: 1.2;
+      margin: 0.5rem;
+       font-size:1rem;
+      line-height: 1.5;
       
     }
     .colaboradores {
