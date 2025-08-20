@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-// import '../App.css';
-
-
 
 import '../components/css/header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +8,30 @@ const Header = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [selectedOption, setSelectedOption] = useState('');
   let speechInstance = null;
-  
+
+  // -------- Funções de leitura --------
+  const iniciarLeitura = () => {
+    const selectedText = window.getSelection()?.toString().trim();
+    const text = selectedText || document.body.innerText;
+
+    if (text.length > 0) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'pt-BR';
+
+      utterance.onend = () => {
+        setIsPaused(false);
+      };
+
+      speechInstance = utterance;
+      speechSynthesis.speak(speechInstance);
+    }
+  };
+
+  const pararLeitura = () => {
+    speechSynthesis.cancel();
+    setIsPaused(false);
+  };
+
   const leitorDeTexto = () => {
     if (speechSynthesis.speaking && !isPaused) {
       speechSynthesis.pause();
@@ -21,31 +41,10 @@ const Header = () => {
       setIsPaused(false);
     } else {
       speechSynthesis.cancel();
-  
-      // Verifica se há texto selecionado
-      const selectedText = window.getSelection().toString().trim();
-  
-      const text = selectedText || document.body.innerText;
-  
-      if (text.length > 0) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'pt-BR';
-  
-        utterance.onend = () => {
-          setIsPaused(false);
-        };
-  
-        speechInstance = utterance;
-        speechSynthesis.speak(speechInstance);
-      }
+      iniciarLeitura();
     }
   };
-  
-  const pararLeitura = () => {
-    speechSynthesis.cancel();
-    setIsPaused(false);
-  };
-  
+
   const verificarFimDaPagina = () => {
     if (
       window.innerHeight + window.scrollY >= document.body.offsetHeight &&
@@ -55,44 +54,54 @@ const Header = () => {
       setIsPaused(true);
     }
   };
-  
 
+  // -------- Funções de acessibilidade --------
   const alterarCorDaPagina = () => {
     const body = document.body;
-    const footer = document.getElementById('pageFooter');
+  
 
     body.style.backgroundColor = '#000';
-    if (footer) footer.style.backgroundColor = '#000';
+    body.style.color = '#fff';
+    
 
     const secoes = [
       ...document.querySelectorAll('section'),
-    ...document.querySelectorAll('.welcome'),
-    ...document.querySelectorAll('.know-us'),
-    ...document.querySelectorAll('.historia'),
-    ...document.querySelectorAll('.content-container'),
-    ...document.querySelectorAll('.pastors-section'),
-    ...document.querySelectorAll('.courses'),
-    ...document.querySelectorAll('.eventos'),
-    ...document.querySelectorAll('.doacao'),
-    ...document.querySelectorAll('h2.sub-titulo'),
-    ...document.querySelectorAll('div.imag-footer span'),
-    ...document.querySelectorAll('table.agenda'),
-    ...document.querySelectorAll('div.pesquisa'),
-    ...document.querySelectorAll('div.on'),
-    ...document.querySelectorAll('div.course'),]
+      ...document.querySelectorAll('.welcome'),
+      ...document.querySelectorAll('.know-us'),
+      ...document.querySelectorAll('.historia'),
+      ...document.querySelectorAll('.content-container'),
+      ...document.querySelectorAll('.pastors-section'),
+      ...document.querySelectorAll('.courses'),
+      ...document.querySelectorAll('.eventos'),
+      ...document.querySelectorAll('.doacao'),
+      ...document.querySelectorAll('h2.sub-titulo'),
+      ...document.querySelectorAll('h3.sub-titulo'),
+      ...document.querySelectorAll('h4.sub-titulo'),
+      ...document.querySelectorAll('h5.sub-titulo'),
+      ...document.querySelectorAll('table.agenda'),
+      ...document.querySelectorAll('div.pesquisa'),
+      ...document.querySelectorAll('div.on'),
+      ...document.querySelectorAll('div.testemunho'),
+      ...document.querySelectorAll('div.course'),
+      ...document.querySelectorAll('section.testemunhos'),
+      ...document.querySelectorAll('p.versiculo')
+    ];
 
     secoes.forEach((secao) => {
       if (secao) {
         secao.style.backgroundColor = '#000';
         secao.style.color = '#fff';
-        secao.querySelectorAll('h1, h2, h3, h4, p, span, a, strong, div, li, td, th, footer').forEach((el) => {
-          el.style.color = '#fff';
-        });
+
+        secao
+          .querySelectorAll('h1, h2, h3, h4, p, span, a, strong, div, li, td, th')
+          .forEach((el) => {
+            el.style.setProperty('color', '#fff', 'important');
+          });
 
         if (secao.tagName === 'TABLE') {
-          secao.style.borderColor = '#fff';
+          secao.style.setProperty('border-color', '#fff', 'important');
           secao.querySelectorAll('td, th').forEach((celula) => {
-            celula.style.borderColor = '#fff';
+            celula.style.setProperty('border-color', '#fff', 'important');
           });
         }
       }
@@ -107,11 +116,11 @@ const Header = () => {
 
   const resetarConfiguracoes = () => {
     const body = document.body;
-    const footer = document.getElementById('pageFooter');
+    
     const welcomeSection = document.querySelector('.welcome');
 
     body.removeAttribute('style');
-    if (footer) footer.removeAttribute('style');
+    
     if (welcomeSection) welcomeSection.removeAttribute('style');
 
     document.querySelectorAll('body, body *').forEach((el) => {
@@ -150,64 +159,58 @@ const Header = () => {
     }
   };
 
+  // -------- JSX --------
   return (
     <div>
-     
-        <div className="">
-          <div className="header">
+      <div className="header">
+        <h1 className="titulo-pagina">
+          <a href="/">
+            <img
+              className="logomarca"
+              src="./images/logo.jpg"
+              alt="Logo Igreja Novo Tempo"
+            />
+          </a>
+          A Igreja do Futuro
+        </h1>
 
+        <nav className="nav">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/whoweare">Quem Somos</Link></li>
+            <li><Link to="/ctn">CNT</Link></li>
+            <li><Link to="/ebnt">EBNT</Link></li>
+            <li><Link to="/sabedoria">Sabedoria</Link></li>
+            <li><Link to="/events">Eventos</Link></li>
+            <li><Link to="/generosity">Generosidade</Link></li>
+            <li><Link to="/location">Localização</Link></li>
+          </ul>
+        </nav>
 
-            <h1 className="titulo-pagina">
+        <div className="Ouvir">
+          <button onClick={leitorDeTexto}>🔊 Ouvir Página</button>
+          <button onClick={pararLeitura}>🛑 Parar</button>
 
-              <a href="/">
-              <img className="logomarca" src="./images/logo.jpg" alt="Logo Igreja Novo Tempo"
-              
-              />
-                
-              </a>
-             
-              Novo Tempo - A Igreja da Família
-            </h1>
-
-            <nav className="nav">
-              <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/whoweare">Quem Somos</Link></li>
-                <li><Link to="/ctn">CNT</Link></li>
-                <li><Link to="/ebnt">EBNT</Link></li>
-                <li><Link to="/sabedoria">Sabedoria</Link></li>
-                <li><Link to="/events">Eventos</Link></li>
-                <li><Link to="/generosity">Generosidade</Link></li>
-                <li><Link to="/location">Localização</Link></li>
-              </ul>
-            </nav>
-
-            <div className="Ouvir">
-              <button onClick={leitorDeTexto}>🔊 Ouvir Página</button>
-              <button onClick={pararLeitura}>🛑 Parar</button>
-              
-              <div className="acessibilidade">
-                <label htmlFor="selecione"></label>
-                <select
-                  name="GrupoSelect"
-                  id="selecione"
-                  value={selectedOption}
-                  onChange={handleChange}
-                >
-                  <option value="" disabled>
-                    Escolha uma opção de fonte/cor:
-                  </option>
-                  <option value="cor">Alterar Cor Da Página</option>
-                  <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
-                  <option value="fonte-media">Tamanho de Fonte Médio</option>
-                  <option value="fonte-grande">Tamanho de Fonte Grande</option>
-                  <option value="reset">Voltar ao Padrão</option>
-                </select>
-              </div>
-            </div>
+          <div className="acessibilidade">
+            <label htmlFor="selecione"></label>
+            <select
+              name="GrupoSelect"
+              id="selecione"
+              value={selectedOption}
+              onChange={handleChange}
+            >
+              <option value="" disabled>
+                Escolha uma opção de fonte/cor:
+              </option>
+              <option value="cor">Alterar Cor Da Página</option>
+              <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+              <option value="fonte-media">Tamanho de Fonte Médio</option>
+              <option value="fonte-grande">Tamanho de Fonte Grande</option>
+              <option value="reset">Voltar ao Padrão</option>
+            </select>
           </div>
         </div>
-      
+      </div>
     </div>
   );
 };

@@ -74,9 +74,10 @@
   }
   p{
     font-size: 1.1rem;
-    line-height: 0.5rem;
+    line-height: 1.2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
+    color: #000;
   }
   
   
@@ -127,6 +128,7 @@
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center; /* Centraliza conteúdo inline, incluindo botões */
   }
   
   .button-link-google:hover {
@@ -135,20 +137,25 @@
   }
 
 
-  .button-link-youtube{
+.button-link-youtube {
+  display: block;       /* Faz o botão ocupar toda a linha */
+  width: fit-content;   /* Ajusta a largura ao conteúdo */
+  margin: 0.9rem auto;  /* Centraliza horizontalmente */
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.on a,
+.pesquisa a {
+  text-decoration: none; /* remove sublinhado de todos os links dentro dos containers */
+}
 
 
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 0.9rem;
-      background: linear-gradient(to right, rgba(137, 56, 224, 0.41), black);
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
     
     .button-link-youtube:hover {
       background-color: #0b243d;

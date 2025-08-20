@@ -1,84 +1,63 @@
-import React from 'react'
+import React from 'react';
 import '../index.css';
 import '../App.css';
 import '../components/css/home.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
-
-
-
-
 const Home = () => {
   return (
     <>
-    
-    
-   
-    <main className='container'>
-       <section>
-  <section className="welcome">
-    <h3 className='titulo'>Bem-vindo à nossa Família!</h3>
-    <p>
-      Guiados pelo amor a Deus e ao próximo, nossa visão é ser uma igreja que acolhe, cuida e oferece apoio incondicional, ajudando cada irmão a crescer espiritualmente e viver em harmonia com o propósito de Cristo."
-      <br />
-      O principal objetivo é acolher e fortalecer espiritualmente os Usuários desta página. Pois: "pessoas são mais importantes que coisas".
-    </p>
+      {/* Seção de boas-vindas */}
+      <section className="welcome">
+        <h3 className="titulo">Bem-vindo Família!</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, incidunt! Repellendus laboriosam illum nihil nam deleniti accusamus recusandae, sed cumque possimus ex. Dolorem architecto voluptates sapiente, ipsum provident dolore tempore.
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores obcaecati, tempore quasi suscipit sapiente voluptatem et, cumque ipsa reiciendis corporis reprehenderit dolorem aut repudiandae quos cupiditate quia sint quisquam.
+        </p>
 
-    <iframe
-      id="video"
-      src="https://www.youtube.com/embed/v3E8XbLalwQ?autoplay=1&mute=1&si=mDf5ghHvb8BB_nLJ"
-      title="YouTube video player"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allowFullScreen
-    ></iframe>
-  </section>
+        {/* Vídeo incorporado do YouTube */}
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/nSAPBBgPnos"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </section>
 
-  <section>
-    <div className='on'>
-      <h4>
-        Convidamos Você para se juntar a Nós para louvar a Deus. Estaremos ao vivo, confira as datas abaixo!
-      </h4>
-      <h3 className='sub-titulo'>⛪ Cultos Oficiais</h3>
-      <p> 🗓 Quarta-feira - 20:00h</p>
-      <p>Culto Posicionados para Prosperar</p>
-      <p> 🗓 Domingo - 9:00h e 18:00h</p>
-      <p>Culto da Família</p>
-  
-      <p className='sub-titulo'>Acessar o canal no Youtube abaixo!</p>
+      {/* Seção de cultos oficiais */}
+      <section className="on">
+        <h4>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti voluptatibus optio fugit perspiciatis, officiis similique earum ipsam. Ipsa praesentium similique molestiae cumque eaque temporibus, labore enim velit corrupti earum illo.
+        </h4>
 
-      <a href="https://www.youtube.com/@MinisterioNovotempo">
-        <button className='button-link-youtube'> 🎥 Acesse o nosso canal no YouTube</button>
-      </a>
-    </div>
-  </section>
+        <h3 className="sub-titulo">⛪ Cultos Oficiais</h3>
+        <p>🗓 Sábado - 20:00h | Culto Posicionados para Prosperar</p>
+        <p>🗓 Domingo - 9:00h e 18:00h | Culto da Família</p>
 
-  <section>
-    <h4 className="sub-titulo">A nossa igreja quer te conhecer melho!</h4>
-    <div className="pesquisa">
-      <p>
-        Estamos felizes por você estar conosco! Queremos saber mais sobre você para oferecer a melhor acolhida possível e ajudá-lo a se sentir parte de nossa família. Por favor, responda às perguntas.
-      </p>
+        <p className="sub-titulo">Acessar o canal no YouTube abaixo!</p>
+        <a href="https://www.youtube.com/@MinisterioNovotempo" target="_blank" rel="noopener noreferrer">
+          <button className="button-link-youtube">🎥 Acesse o nosso canal no YouTube</button>
+        </a>
+      </section>
 
-      <p className='sub-titulo'>Acessar o formulário abaixo!</p>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLScBrZ-7H9EToYZFedkFJhxYEkckoNlz3kjOe1HWFSV_96fHuw/viewform"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button className='button-link-google'> 💌Clique aqui para acessar o formulário</button>
-      </a>
-    </div>
-  </section>
- </section>
-</main>
+      {/* Seção de formulário para conhecer melhor os visitantes */}
+      <section className="pesquisa">
+        <h4 className="sub-titulo">A nossa igreja quer te conhecer melhor!</h4>
+        <p>
+          Estamos felizes por você estar conosco! Queremos saber mais sobre você para oferecer a melhor acolhida possível e ajudá-lo a se sentir parte de nossa família. Por favor, responda às perguntas.
+        </p>
 
-     
+        <p className="sub-titulo">Acessar o formulário abaixo!</p>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <button className="button-link-google">💌 Clique aqui para acessar o formulário</button>
+        </a>
+      </section>
     </>
   );
-}
+};
 
 export default Home;

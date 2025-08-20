@@ -3,15 +3,15 @@ import '../index.css'
 import '../App.css'
 import '../components/css/whoWeAre.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import historia from '/images/historia.jpg'
-import visao from '/images/visao.jpg'
-import missao from '/images/missao.jpg'
-import bispos from '/images/bispos.jpg'
-import deboraecaio from '/images/deboraecaio.jpg'
-import ricardoepatricia from '/images/ricardoepatricia.jpg'
-import renatoebarbara from '/images/renatoebarbara.jpg'
-import valdeci from '/images/valdeci.jpg'
-import Eduardoedani from '/images/Eduardoedani.jpg'
+import historia from '/imageHistoria.jpg'
+import visao from '/imageHistoria2.jpg'
+import missao from '/imagepostora2.jpg'
+import bispos from '/Imagepastora1.jpg'
+import deboraecaio from '/imagepostora2.jpg'
+import ricardoepatricia from '/imagepastorAna-Alan.jpg'
+import renatoebarbara from '/imagepastorPaulo-Paula.jpg'
+import valdeci from '/imagepastor2.jpg'
+import Eduardoedani from '/Imagepastora1.jpg'
 import AlunosModal from '../components/alunosModal/AlunosModal';
 
 
@@ -37,40 +37,38 @@ const WhoWeAre = () => {
         
           <img
             src={historia}
-            alt="Foto do primeiro encontro da Igreja Novo Tempo"
+            alt="Foto do Igreja "
             className="imagem-historia"
           />
 
           <p>
-          Em 2011, nasceu no coração de Deus o sonho de enviar uma família a uma cidade até então desconhecida para eles: Franco da Rocha. Embora o casal Samuel e Thaís fosse apaixonado por Jesus, inicialmente não tinham o desejo de liderar uma igreja. Seu anseio era ver vidas transformadas pelo poder da Palavra. </p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, incidunt! Repellendus laboriosam illum nihil nam deleniti accusamus recusandae, sed cumque possimus ex. Dolorem architecto voluptates sapiente, ipsum provident dolore tempore.</p>
           <p>
-          Com a ajuda de pessoas cheias de fé e ousadia, que alugaram um espaço, arrumaram cadeiras, instrumentos musicais e organizaram um culto, surgiu a Igreja Novo Tempo.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui earum ex! Veritatis natus, asperiores dignissimos voluptatem fugiat soluta corrupti? Sed possimus mollitia nemo fuga culpa. Soluta aliquam explicabo ratione.
           </p>
           <p>
-          Desde o início, esse ministério tem crescido com propósito e dedicação, impactando famílias e reacendendo a fé em muitos corações.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt porro blanditiis saepe a eaque unde consectetur qui quam debitis. Facilis dolorum accusamus voluptatibus esse quam repudiandae mollitia assumenda enim ea.lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum.
           </p>
           
 
           <h3 className="sub-titulo">Liderança com Propósito</h3>
+         <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, incidunt! Repellendus laboriosam illum nihil nam deleniti accusamus recusandae, sed cumque possimus ex. Dolorem architecto voluptates sapiente, ipsum provident dolore tempore.</p>
           <p>
-            Sob a liderança dos bispos Samuel e Thaís, a igreja se tornou um lugar de acolhimento, ensino e avivamento.
-             Com suas três filhas — Emanuelle, Danielle e Letícia — o casal vive o chamado com intensidade e entrega.
-             </p>
-             <p>
-             Thaís, bióloga de formação, hoje neuropsicopedagoga e terapeuta, e Samuel, ex-supervisor de vendas, deixaram suas carreiras para servir em tempo integral no Reino de Deus, assumindo com coragem e fé a missão de conduzir pessoas ao encontro com Cristo.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui earum ex! Veritatis natus, asperiores dignissimos voluptatem fugiat soluta corrupti? Sed possimus mollitia nemo fuga culpa. Soluta aliquam explicabo ratione.
+          </p>
+          <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt porro blanditiis saepe a eaque unde consectetur qui quam debitis. Facilis dolorum accusamus voluptatibus esse quam repudiandae mollitia assumenda enim ea.lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum.
           </p>
 
           <h2 className="sub-titulo">Nossa Identidade</h2>
+           <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, incidunt! Repellendus laboriosam illum nihil nam deleniti accusamus recusandae, sed cumque possimus ex. Dolorem architecto voluptates sapiente, ipsum provident dolore tempore.</p>
           <p>
-            A trajetória da Novo Tempo é marcada por crescimento, não apenas em número, mas em profundidade espiritual. São vidas restauradas, famílias reerguidas e corações renovados. 
-            </p>
-            <p>
-
-          
-            A igreja se firmou como uma voz profética na cidade, apontando sempre para Jesus como único caminho, verdade e vida.
-            </p>
-            <p>
-            Mais do que uma igreja, a Novo Tempo é uma família espiritual que continua florescendo e avançando, carregando a certeza de que o melhor de Deus ainda está por vir.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui earum ex! Veritatis natus, asperiores dignissimos voluptatem fugiat soluta corrupti? Sed possimus mollitia nemo fuga culpa. Soluta aliquam explicabo ratione.
+          </p>
+          <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt porro blanditiis saepe a eaque unde consectetur qui quam debitis. Facilis dolorum accusamus voluptatibus esse quam repudiandae mollitia assumenda enim ea.lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum.
           </p>
         </div>
         
@@ -89,7 +87,7 @@ const WhoWeAre = () => {
             alt="Imagem sobre a missão"
             className="imagem-secao "
           />
-                <p className='missao-texto'>Transformando vidas e espalhando a luz do Evangelho, nossa missão é levar a mensagem de salvação e amor de Cristo a todos, para que cada coração experimente Sua graça e viva no propósito eterno de Deus.</p>
+                <p className='missao-texto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae excepturi alias praesentium non similique saepe reiciendis provident, nostrum atque vero odit laborum tempora, repellendus ratione placeat quis voluptates ut. Voluptas?.</p>
             </div>
             {/* Visão e  */}
             <div className="box">
@@ -100,8 +98,8 @@ const WhoWeAre = () => {
             className="imagem-secao "
           />
                
-                <p className='missao-texto'>Guiados pelo amor a Deus e ao próximo, nossa visão é ser uma igreja que acolhe, cuida e oferece apoio incondicional, ajudando cada irmão a crescer espiritualmente e viver em harmonia com o propósito de Cristo.</p>
-                <p className='missao-texto'><em>"Amar a Deus e ao próximo" reflete nosso compromisso em apoiar o crescimento espiritual de todos, alinhando-se com Mateus 22:37-39.</em></p>
+                <p className='missao-texto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nemo ullam porro. Eaque, illo accusamus iure vero quibusdam ullam perspiciatis illum totam reprehenderit fugiat dolorem commodi sunt cumque repellat excepturi!.</p>
+                <p className='missao-texto'><em>"O Senhor é a minha luz e a minha salvação; de quem terei medo? (Salmos 27:1).</em></p>
             </div>
             </section>
             <h3 className="sub-titulo">🙏 Conheça nossos pastores </h3>
@@ -122,15 +120,17 @@ src={bispos}
 alt="bispos" className="imagem-secao "
 
 />
-        <h3 className="sub-titulo">Bispo Samuel e Bispa Thais</h3>
+        <h3 className="sub-titulo">Pastora</h3>
         <p>
-            Samuel, gerente da empresa Três Corações no ramo de vendas, e Thais, bióloga na Pfizer, tinham carreiras promissoras, mas sentiam um vazio interior. Diante de um forte chamado de Deus, foram profundamente tocados pela necessidade das comunidades carentes e perceberam um propósito maior em servir ao Senhor.
+            Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
+
+Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
+
+Nosso coração pulsa por vidas transformadas pela graça de Jesus. Queremos caminhar com você, celebrar suas vitórias e estender a mão nas suas lutas. Estamos aqui para ouvir, ensinar, orar e, acima de tudo, amar.
 
 
 </p>
-<p>
-            Enfrentaram desafios financeiros e a incompreensão de muitos, mas a fé os sustentou. Com o tempo, suas iniciativas prosperaram, impactando inúmeras vidas. Hoje, seguem firmes na missão, testemunhando que a verdadeira realização está em servir a Deus e ao próximo.
-        </p>
+
     </div>
 
     <div className="pastor">
@@ -140,22 +140,19 @@ alt="Pastor Caio e Pastora Débora"
 
 />
        
-        <h3 className="sub-titulo">Pastor Caio e Pastora Débora</h3>
+        <h3 className="sub-titulo">Pastora</h3>
         <p>
-            Com corações dispostos e cheios de fé, ouviram atentamente a voz de Deus e, com coragem, deixaram para trás seus planos pessoais para abraçar o ministério pastoral. Hoje, são referência de liderança jovem, inspirando muitos com seu testemunho e dedicação.
+            Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 
 
 </p>
 <p>
 
 
-            Atualmente, a pastora Débora e o pastor Caio servem no Nordeste, levando a mensagem do evangelho e fortalecendo a comunidade da nossa igreja. Com amor e compromisso, trabalham para transformar vidas, guiando jovens e famílias no caminho da fé.
-</p>
+            Somos pastores por vocação, por convicção e por compaixão. Deus nos chamou para edificar uma comunidade de fé onde todos possam encontrar cura, direção e esperança.
+            </p>
 <p>
-            O pastor Caio é formado em Bacharelado em Teologia pela UMESP (Universidade Metodista de São Paulo) e a pastora Débora é pedagoga, pós-graduada em Neuropsicologia, Psicomotricidade e Psicopedagogia. Além de sua atuação no ministério pastoral, ambos se dedicam ao ensino teológico, compartilhando seu profundo conhecimento e experiência para formar futuros líderes espirituais.
-</p>
-<p>
-            Seu exemplo é um reflexo do poder de Deus agindo através de corações dispostos a servi-Lo.
+            Nosso coração pulsa por vidas transformadas pela graça de Jesus. Queremos caminhar com você, celebrar suas vitórias e estender a mão nas suas lutas. Estamos aqui para ouvir, ensinar, orar e, acima de tudo, amar.
         </p>
     </div>
 
@@ -166,7 +163,7 @@ src={ricardoepatricia}
 alt="Ricardo e Patricia"
 
 />
-        <h3 className="sub-titulo">Pastor Ricardo e Pastora Patricia</h3>
+        <h3 className="sub-titulo">Bispos</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 </p>
@@ -186,7 +183,7 @@ src={renatoebarbara}
 alt="Renato e Barbara"
 
 />
-        <h3 className="sub-titulo">Pastor Renato e Pastora Barbara</h3>
+        <h3 className="sub-titulo">Pastores</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 
@@ -210,7 +207,7 @@ src={valdeci}
 alt="Valdeci"
 
 />
-        <h3 className="sub-titulo">Pastor Valdeci</h3>
+        <h3 className="sub-titulo">Pastor</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 </p>
@@ -228,7 +225,7 @@ alt="Valdeci"
 src={Eduardoedani}
 alt="Eduardo e Dani"
 />
-        <h3 className="sub-titulo">Pastor Eduardo e Pastora Dani</h3>
+        <h3 className="sub-titulo">Pastorai</h3>
         <p>
             Nosso chamado pastoral nasceu do desejo profundo de servir a Deus e cuidar de pessoas. Entendemos que a vida cristã vai além de palavras — ela se expressa no amor, na escuta, na presença e no compromisso com cada vida.
 </p>
@@ -248,13 +245,23 @@ alt="Eduardo e Dani"
             <div className="container">
               
               <div className="texto">
-                <h3 className
-                ="sub-titulo">Surgimento do Site:</h3>
+               
                 <h3 className
                 ="sub-titulo">Uma Jornada de Propósito e Colaboração</h3>
-                <p>Em 07/02/2025, uma data que ficará marcada em nossa trajetória, fomos abordados por um grupo de dedicados estudantes de Tecnologia da Informação  da <strong>Univesp</strong>  (Universidade Virtual do Estado de São Paulo), que nos convidaram a participar de seu projeto integrador III, a proposta inicial era [ <strong>Atostech</strong> -conectando a Igreja ao futuro].</p>
-                <p>Aceitamos prontamente o convite, movidos pelo desejo de contribuir com o crescimento e desenvolvimento acadêmico desses jovens talentos. Contudo, no decorrer do processo de desenvolvimento, percebemos que aquele encontro não havia sido mera coincidência.</p>
-                <p>Sentimos que Deus nos proporcionou, através desses estudantes, uma oportunidade singular de levar Seus ensinamentos a um público ainda mais vasto. Expressamos nossa profunda gratidão a Ele por colocar em nosso caminho essas pessoas talentosas, que com esmero e dedicação desenvolveram nossa página.</p>
+                <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus mollitia alias, sint molestiae nulla velit deserunt dolorum aspernatur quidem esse vitae doloremque distinctio repellat quos harum cupiditate accusantium nostrum molestias!
+
+
+</p>
+<p>
+
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam dignissimos, dolorum ex rem sunt eum harum iste eius quidem aspernatur delectus animi. Corporis tempora quis necessitatibus accusamus reiciendis! Dolor?
+            </p>
+<p>
+            Lorem);
+            
+        </p>
                 
                 <p>Para conhecer mais sobre essa inspiradora jornada, clique em. <AlunosModal/> </p>
                 

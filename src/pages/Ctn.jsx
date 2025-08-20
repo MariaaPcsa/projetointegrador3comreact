@@ -11,7 +11,7 @@ const Ctn = () => {
     <>
     <body>
       <Header/>
-    <div><h2>Ebnt</h2></div>
+    <div><h2>Faq</h2></div>
     <Footer/>
     </body>
     

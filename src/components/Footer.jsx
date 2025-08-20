@@ -1,91 +1,48 @@
-import React from 'react'
+import React from 'react';
 import '../App.css';
 import '../components/css/footer.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const socialLinks = [
+  { href: "", img: "../images/imag-YouTube.jpg", alt: "Logo do YouTube" },
+  { href: "", img: "../images/instagram.jpg", alt: "Logo do Instagram" },
+  { href: "", img: "../images/facebook_log.png", alt: "Logo do Facebook" },
+  { href: "", img: "../images/imag-tik-tok.jpg", alt: "Logo do TikTok" },
+  { href: "https://wa.me/9999999999999", img: "../images/imagwhatsapp.jpg", alt: "Ícone do Whatsapp" },
+  { href: "#", img: "../images/Seta-volta.jpg", alt: "Ícone de seta para voltar", id: "voltar" }
+];
+
 const Footer = () => {
   return (
-    <>
-   <section>
-
-  
-
-
-    <div className='footer'>
-        <section>
-
-       
-        <div className='imag-footer'>
-
-       
-    <ul>
-            <li>
-                <a className="midia-link-lista" href="https://www.youtube.com/@MinisterioNovotempo" target="_blank">
-                    <img src="../images/imag-YouTube.jpg" alt="Logo do YouTube" />
+    <footer className="footer-section">
+      <div className="footer">
+        <div className="imag-footer">
+          <ul>
+            {socialLinks.map((link, index) => (
+              <li key={index}>
+                <a
+                  className="midia-link-lista"
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id={link.id || undefined}
+                >
+                  <img src={link.img} alt={link.alt} />
                 </a>
-            </li>
-            {/* <!-- YouTube --> */}
-        
-            <li>
-                <a className="midia-link-lista" href="https://www.instagram.com/mnovotempo/" target="_blank">
-                    <img src="../images/instagram.jpg" alt="Logo do Instagram" />
-                </a>
-            </li>
-            {/* <!-- Instagram --> */}
-        
-            <li>
-                <a className="midia-link-lista" href="https://www.facebook.com/imnovotempo" target="_blank">
-                    <img src="../images/facebook_log.png" alt="Logo do Facebook" />
-                </a>
-            </li>
-            {/* <!-- Facebook --> */}
-        
-            <li>
-                <a className="midia-link-lista" href="https://www.tiktok.com/@hashtagprogramacao " target="_blank">
-                    <img src="../images/imag-tik-tok.jpg" alt="Logo do TikTok" />
-                </a>
-            </li>
-            {/* <!-- TikTok --> */}
-        
-            <li>
-                <a className="midia-link-lista"  href="https://wa.me/5511918330406" target="_blank">
-                    <img src="../images/imagwhatsapp.jpg" alt="Ícone do Whatsapp" />
-                </a>
-            </li>
-            {/* <!-- Whatsapp --> */}
-        
-            <li>
-                <a href="#" className="midia-link-lista" id='voltar'>
-                    <img src="../images/Seta-volta.jpg" alt="Ícone de seta para voltar" />
-                    
-                    
-                </a>
-            </li>
-           
-            
-            {/* <!-- Retornar --> */}
-        </ul>
+              </li>
+            ))}
+          </ul>
         </div>
+
+        <section className="address">
+          <address>
+            Rua:  Número:  Bairro: , Cidade: , Estado: , CEP: 
+          </address>
+          <p>&copy; 2025   A Igreja do Futuro- Todos os direitos reservados.</p>
         </section>
+      </div>
+    </footer>
+  );
+};
 
-
-        <section className='address'>
-            
-        <address>
-              <p>Endereço: Rua: Jaime Duprat, Número: 530, Bairro: Parque Vitoria, Cidade: Franco da Rocha, Estado: SP, CEP:07857-0800 </p>
-            </address>
-            
-          
-          <p>&copy; 2025 Igreja Cristã Novo Tempo - Todos os direitos reservados.</p>
-        </section>
-      
-<h4 class="colaboradores">Este Site foi desevolvido por estudantes de TI da Univesp(Universidade Virtual do Estado de São Paulo)</h4>
-        
-    </div>
-    </section>
-   
-     </>
-  )
-}
-
-export default Footer
+export default Footer;
